@@ -1,0 +1,146 @@
+div.swiper-video-next, div.swiper-video-prev{
+	position: absolute;
+	z-index: 9999;
+	cursor: pointer;
+}
+div.swiper-video-prev{
+	left: 0;
+}
+div.swiper-video-next {
+	right: 0;
+}
+
+.swiper-video-next:hover svg, .swiper-video-prev:hover svg {
+	scale: 1.3;
+} 
+
+main[video-section-comp] {
+    display: flex !important;
+    width: 100% !important;
+    height: 623px !important; /* Ajusta según tus necesidades */
+    box-sizing: border-box;
+}
+
+
+.where {
+    width: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #f5f5f5 !important; /* Cambia esto según tu diseño */
+	overflow: hidden;
+	position: relative;
+}
+
+.swiper-video-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-video {
+	width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.client.fade-up {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+	padding: 0 10% 0 5%;
+	background-color: var(--secondary2);
+}
+
+h1[video-section-comp] {
+	font-size: 20px;
+	color: var(--tertiary)
+}
+
+h2[video-section-comp] {
+	font-weight: 900
+}
+
+.text[video-section-comp] {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: left
+}
+
+.text11 p[video-section-comp] {
+	padding-left: 15px;
+	border-left: 3px solid var(--tertiary)
+}
+
+.text-none[video-section-comp] {
+	opacity: 0;
+	display: none
+}
+
+
+.background[video-section-comp] {
+	
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .8s ease
+}
+
+.opacity[video-section-comp] {
+	opacity: 0
+}
+
+@media (min-width: 700px) {
+	h1[video-section-comp] {
+		font-size: 24px
+	}
+
+	h2[video-section-comp] {
+		font-size: 18px
+	}
+}
+
+@media (min-width: 1000px) {
+
+	.text[video-section-comp] {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		padding: 92px 10% 92px 5%;
+		order: 0;
+		width: 50%;
+		justify-content: center;
+	}
+
+	h1[video-section-comp] {
+		font-size: 36px
+	}
+
+	h2[video-section-comp] {
+		font-size: 24px
+	}
+
+	.text-none[video-section-comp] {
+		display: flex
+	}
+
+	.last {
+		color: var(--secondary);
+		font-family: Montserrat;
+		font-weight: 700;
+		font-size: 18px
+	}
+}

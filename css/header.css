@@ -1,0 +1,48 @@
+header.page {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    text-align: center;
+    text-align: center;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./about-header.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header.page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Ajusta la opacidad aquí */
+    z-index: 1;
+}
+
+header.page > * {
+    position: relative;
+    z-index: 2;
+}
+
+header.page h1 {
+    color: #FCF8EC;
+    font-size: 36px;
+    font-family: Roboto-Regular;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+header.page p {
+    font-size: 22px;
+    color: #FCF8EC;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    word-wrap: break-word;
+    max-width: 562px;
+}

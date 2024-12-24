@@ -1,0 +1,214 @@
+main[data-v-4beb8d90] {
+	padding: 96px 5%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	justify-content: stretch;
+	align-items: stretch;
+	background-color: var(--secondary2)
+}
+
+h1[data-v-4beb8d90] {
+	font-size: 20px;
+	color: var(--tertiary)
+}
+
+a[data-v-4beb8d90],
+h2[data-v-4beb8d90] {
+	font-family: Roboto-Regular;
+	font-size: 17px;
+	font-weight: 100;
+	color: var(--tertiary)
+}
+
+h2[data-v-4beb8d90] {
+	font-weight: 900
+}
+
+.text[data-v-4beb8d90] {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	text-align: left
+}
+
+.text1[data-v-4beb8d90] {
+	display: flex;
+	flex-direction: column;
+	gap: 20px
+}
+
+.text11[data-v-4beb8d90],
+.text12[data-v-4beb8d90],
+.text13[data-v-4beb8d90] {
+	display: flex;
+	flex-direction: column;
+	gap: 10px
+}
+
+.text11 p[data-v-4beb8d90] {
+	padding-left: 15px;
+	border-left: 3px solid var(--tertiary)
+}
+
+.where-chaping{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 350px;
+	background-image: url(./chapling.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	pointer-events: none;
+	height: auto;
+}
+
+.text-none[data-v-4beb8d90] {
+	opacity: 0;
+	display: none
+}
+
+.button1[data-v-4beb8d90] {
+	text-align: center;
+	padding: 17px 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px #00000042;
+	font-size: 12px;
+	transition: .2s ease;
+	color: #fff;
+	background-color: var(--primary);
+	font-family: Roboto-Medium;
+	width: 100%;
+	margin: 0 auto
+}
+
+.button1[data-v-4beb8d90]:hover {
+	background-color: var(--secondary);
+	color: var(--tertiary)
+}
+
+.background[data-v-4beb8d90] {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(./chapling-pixel.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: .8s ease
+}
+
+.opacity[data-v-4beb8d90] {
+	opacity: 0
+}
+
+@media (min-width: 700px) {
+	h1[data-v-4beb8d90] {
+		font-size: 24px
+	}
+
+	h2[data-v-4beb8d90] {
+		font-size: 18px
+	}
+
+	.where-chapling{
+		width: 100%;
+		min-height: 450px
+	}
+
+	.text1[data-v-4beb8d90] {
+		display: flex;
+		flex-direction: column;
+		gap: 34px
+	}
+
+	.button1[data-v-4beb8d90] {
+		font-size: 16px
+	}
+}
+
+@media (min-width: 1000px) {
+	main[data-v-4beb8d90] {
+		padding: unset;
+		flex-direction: row;
+		display: flex;
+		gap: 50px;
+		justify-content: stretch;
+		align-items: stretch;
+		background-color: var(--secondary2)
+	}
+
+	.button1[data-v-4beb8d90] {
+		padding: 21px 35px;
+		min-width: unset;
+		max-width: unset;
+		width: max-content;
+		margin: unset;
+		margin-top: 8px;
+		font-size: 18px
+	}
+
+	.text[data-v-4beb8d90] {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		padding: 92px 10% 92px 5%;
+		order: 0;
+		width: 50%;
+		justify-content: space-between;
+		gap: 50px
+	}
+
+	.text1[data-v-4beb8d90] {
+		display: flex;
+		flex-direction: column;
+		gap: 24px
+	}
+
+	.text11[data-v-4beb8d90],
+	.text12[data-v-4beb8d90],
+	.text13[data-v-4beb8d90] {
+		display: flex;
+		flex-direction: column;
+		gap: 10px
+	}
+
+	.text11 p[data-v-4beb8d90] {
+		padding-left: 15px;
+		border-left: 3px solid var(--tertiary)
+	}
+
+	.where-chapling[data-v-4beb8d90] {
+		width: 50%;
+		min-height: 400px
+	}
+
+	h1[data-v-4beb8d90] {
+		font-size: 36px
+	}
+
+	h2[data-v-4beb8d90] {
+		font-size: 24px
+	}
+
+	a[data-v-4beb8d90] {
+		font-size: 20px
+	}
+
+	.text-none[data-v-4beb8d90] {
+		display: flex
+	}
+
+	.last {
+		color: var(--secondary);
+		font-family: Montserrat;
+		font-weight: 700;
+		font-size: 18px
+	}
+}

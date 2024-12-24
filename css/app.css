@@ -1,0 +1,273 @@
+@font-face {
+	font-family: Montserrat;
+	src: url(./Montserrat-VariableFont_wght.ttf)
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src: url(./Roboto-Light.ttf)
+}
+
+@font-face {
+	font-family: Roboto-Medium;
+	src: url(./Roboto-Medium.ttf)
+}
+
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(./Roboto-Regular.ttf)
+}
+
+@font-face {
+	font-family: Roboto-Bold;
+	src: url(./Roboto-Bold.ttf)
+}
+
+@font-face {
+	font-family: Raleway;
+	src: url(./Raleway-VariableFont_wght.ttf)
+}
+
+:root {
+	--primary: #FD3032;
+	--secondary: #FCF8EC;
+	--secondary2: #E8E2CF;
+	--tertiary: #2C2C2C;
+	--green: #84C022;
+	--notif2: #E22B2D
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0
+}
+
+a {
+	text-decoration: none;
+	color: var(--tertiary)
+}
+
+html, body {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Roboto-Bold;
+	color: var(--tertiary)
+}
+
+.input-label {
+    /*font-size: 18px;*/
+    font-family: Roboto-Medium;
+    word-wrap: break-word;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	color: var(--tertiary);
+    /*font-size: 18px !important;*/
+    height: 60px !important;
+    background-color: var(--secondary2);
+    border: none !important;
+    padding: 15px !important;
+}
+
+.button2 {
+    /*font-size: 18px !important;*/
+    padding: 21px 10px !important;
+    border: 2px solid var(--tertiary) !important;
+    border-radius: 8px !important;
+    transition: .2s ease !important;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto-Medium !important;
+    max-width: 200px !important;
+    cursor: pointer;
+    font-weight: 500 !important;
+
+}
+
+.button2:hover {
+    background-color: var(--tertiary) !important;
+    color: #fff !important;
+}
+
+.button1 {
+    font-family: Roboto-Medium;
+    background: #FD3032;
+    color: #FCF8EC;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 48px;
+    display: inline-flex !important; /* Utiliza Flexbox para manejar la alineación */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura el centrado del texto */
+    width: max-content; /* Ajusta el ancho según el contenido */
+    line-height: 1;
+    padding: 21px 45px;
+}
+.button1:hover {
+	background-color: var(--secondary2);
+	color: var(--tertiary)
+}
+
+
+a.button1 {
+  display: block;
+}
+
+h1.header {
+    color: #FCF8EC;
+    font-size: 36px;
+    font-weight: 700;
+    word-wrap: break-word
+}
+p.header {
+    color: #FCF8EC;
+    font-size: 22px;
+    font-family: Roboto-Regular;
+    word-wrap: break-word;
+    padding: 5px 20%;
+}
+
+p,
+a,
+li {
+	font-family: Roboto-Regular;
+	color: var(--tertiary)
+}
+
+body {
+	background-color: #ffffff;
+	max-width: 1920px;
+	margin: 0 auto;
+	width: 100%;
+    font-size: 18px;
+    font-family: Roboto-Regular;
+}
+
+input:focus {
+	outline: none
+}
+
+h2 {
+	color: #2C2C2C;	
+	font-family: Roboto-Bold;
+	font-weight: 600;
+	word-wrap: break-word
+}
+
+th {
+	color: #2C2C2C;
+	font-size: 18px !important;
+	font-family: Roboto-Bold !important;
+	font-weight: 600 !important;
+	word-wrap: break-word
+}
+
+p {
+    font-size: 18px;
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    line-height: 32px;
+    word-wrap: break-word;
+}
+
+div.product-name {
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 700;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+p.product-price {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (min-width: 1500px) {
+    div.product-name {
+        font-size: 20px;
+        font-family: Montserrat;
+        font-weight: 700;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    p.product-price {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 1300px) {
+    div.product-name {
+        font-size: 20px;
+        font-family: Montserrat;
+        font-weight: 700;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    p.product-price {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+}
+
+.link {
+    padding: 4px 0;
+    font-weight: 700;
+    font-family: Roboto-Regular;
+    text-decoration: underline;
+    min-width: max-content;
+}
+/* @media (min-width: 1440px) {
+    p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+} */
+/* 
+@media (min-width: 1920px) {
+    p {
+        font-size: 18px !important;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+ */
+
+

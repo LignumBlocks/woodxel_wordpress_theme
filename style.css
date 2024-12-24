@@ -1,0 +1,39 @@
+/*
+Theme Name: My WooCommerce Theme
+Theme URI: https://example.com/
+Author: Roiky
+Author URI: https://example.com/
+Description: Custom WooCommerce theme with Vue.js and Vite.
+Version: 1.0
+*/
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.text h2.blog-section {
+    min-width: max-content;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+a {
+    font-size: 20px;
+}
+
+.header-buttons a{
+    width: 100%;
+}
+
+.before-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

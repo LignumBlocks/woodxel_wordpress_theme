@@ -13,7 +13,7 @@ get_header(); ?>
 
 <main id="main" class="site-main about-page">
     <header data-v-9bc466b2="" class="page">
-        <div class="text" data-v-9bc466b2="">
+        <div data-v-9bc466b2="">
             <h1 data-v-9bc466b2="">ABOUT US</h1>
             <p data-v-9bc466b2="">Learn about the history of Woodxel, its emergence and development, as well as its founding artist and team.</p>
         </div>
@@ -35,35 +35,17 @@ get_header(); ?>
          </div>
       </div>
       <div class="about-image" data-v-5cdffde3="">
-         <div class="left" data-v-5cdffde3="">
-            <div class="recorte-contenedor" data-v-5cdffde3="">
-               <div class="recorte" data-v-5cdffde3=""></div>
-            </div>
-            <div class="man" data-v-5cdffde3="">
-               <!-- <img src="http://w2.local/wp-content/uploads/2024/12/about.png" alt="" data-v-5cdffde3=""> -->
-            </div>
-         </div>
-         <div class="right" data-v-5cdffde3="">
-            <div class="right-background" data-v-5cdffde3=""></div>
-         </div>
+         
       </div>
    </main>  
 
     <main data-v-8e3445a3="">
             <div class="text" data-v-8e3445a3="" >
                <div class="text1" data-v-8e3445a3="">
-                  <div class="text11" data-v-8e3445a3="">
                      <h2>Meet the team</h2>
-                  </div>
-                  <div>
                      <p >While Nelson Paredes remains the visionary and driving force behind Woodxel, the success of every project is made possible by a skilled and passionate team of artisans, designers, and professionals. Each member brings a unique perspective and expertise, ensuring that every piece meets the highest standards of artistic craftsmanship and innovative design.</p>
-                  </div>
-                  <div>
                      <p >Our collaborative approach allows us to combine creativity with precision, delivering masterpieces that are both visually stunning and acoustically impactful. Together, we transform ideas into reality, crafting custom pixelated wooden art that tells a story and enhances the spaces it inhabits.</p>
-                  </div>
-                  <div>
                      <p style="margin-bottom: 0">Woodxel has grown into a trusted brand, celebrated for its seamless customization tools, exceptional quality, and dual-purpose designs that elevate both aesthetics and acoustics. This collective dedication ensures that every piece is as unique and personal as the memories it represents.</p>
-                  </div>
                </div>
             </div>
             <div class="where" data-v-8e3445a3="">
@@ -76,18 +58,10 @@ get_header(); ?>
          <main data-v-45606754="">
             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text" data-v-45606754="">
                <div class="text1" data-v-45606754="">
-                  <div class="text11" data-v-45606754="">
                      <h2>Evolution of Woodxel</h2>
-                  </div>
-                  <div >
                      <p>Initially, Nelson experimented with manual methods, creating pixel art on wood through a detailed, labor-intensive process. </p>
-                  </div>
-                  <div class="text13" data-v-45606754="">
                      <p>Over time, his technique evolved, leading to the development of an interactive 3D design tool that allows users to transform images into pixelated wood art, offering real-time visualization and instant pricing. </p>
-                  </div>
-                  <div class="text14" data-v-45606754="">
-                     <p>This innovative tool not only streamlines the creative process but also enhances the user experience by making high-quality, personalized art more accessible.</p>
-                  </div>
+                     <p style="margin-bottom: 0">This innovative tool not only streamlines the creative process but also enhances the user experience by making high-quality, personalized art more accessible.</p>
                </div>
             </div>
             <div class="where" data-v-45606754="">
@@ -96,7 +70,7 @@ get_header(); ?>
          </main>
 
          <main data-v-3ccdeeb0="">
-            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text" data-v-3ccdeeb0="">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-v-3ccdeeb0="">
                <div class="text1" data-v-3ccdeeb0="">
                   <div class="text11" data-v-3ccdeeb0="">
                      <h2>Reasons to choose us</h2>
@@ -131,8 +105,8 @@ get_header(); ?>
                   <div class="swiper-wrapper">
                         <!-- Video 1 -->
                         <div class="swiper-slide">
-                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/girl_with_pearl.mp4">
-                                 <source src="http://w2.local/wp-content/uploads/2024/12/girl_with_pearl.mp4" type="video/mp4">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4" type="video/mp4">
                                  Tu navegador no soporta la reproducción de video.
                               </video>
                         </div> 
@@ -152,15 +126,6 @@ get_header(); ?>
             </div>
             
          </main>
-
-       <!--  <main data-v-9b166b66="">
-        <div data-v-9b166b66="" class="background"></div>
-        <div data-v-9b166b66="" class="carousel">
-            <h1 data-v-9b166b66="">WHAT OUR CLIENT SAYS</h1>
-            <div data-v-9b166b66="" class="carousel">
-            </div>
-        </div>
-        </main> -->
 </main>
 
 <?php

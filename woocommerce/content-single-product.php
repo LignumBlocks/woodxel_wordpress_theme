@@ -24,7 +24,7 @@ remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_singl
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 8 );
 
 
-add_action( 'woocommerce_single_product_summary', 'display_dimensions', 7 );
+/* add_action( 'woocommerce_single_product_summary', 'display_dimensions', 7 );
 function display_dimensions() {
     global $product;
 
@@ -33,14 +33,22 @@ function display_dimensions() {
     if ( $dimensions ) {
         echo '<div data-v-4935e4b1 class="text1">';
         echo '<p>Dimensions: ' . esc_html( $dimensions ) . '</p>';
+        echo '<p>';
         echo '<a href="/product/image-customized" class="link" style="color: #2C2C2C;
         font-size: 18px;
         font-family: Roboto-Bold;
         font-weight: 700;
         text-decoration: underline;
         word-wrap: break-word;">Choose another size and price</a>';
+        echo '</p>';
         echo '</div>';
     }
+} */
+
+add_action( 'woocommerce_single_product_summary', 'display_empty', 9 );
+function display_empty() {
+        echo '<div class="empty full-width">';       
+        echo '</div>';
 }
 
 
@@ -93,7 +101,6 @@ if ( post_password_required() ) {
             do_action( 'woocommerce_single_product_summary' );
 
             ?>
-            <hr data-v-4935e4b1="">
             </main>
             <main data-v-d974372f="" data-v-101211cc="">
             <?php global $product;
@@ -110,7 +117,7 @@ if ( post_password_required() ) {
             ?>
 
                   <div class="part" data-v-101211cc="">
-                     <h2>DESCRIPTION</h2>
+                     <h2>Description</h2>
                      <div class="info" data-v-101211cc="">
                         <p><span data-v-101211cc="">Dimensions:</span>&nbsp;<?php echo(esc_html( $dimensions )); ?></p>
                         <p><span data-v-101211cc="">Blocks count:</span>&nbsp;<?php echo(esc_html( $blocks )); ?></p>
@@ -138,125 +145,104 @@ if ( post_password_required() ) {
         <section data-v-7da4b8f3="" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text">
             <div data-v-7da4b8f3="" class="text1">
                 <div data-v-7da4b8f3="" class="text11">
-                    <h2 data-v-7da4b8f3="">RELATED PRODUCTS</h2>
-                    <p data-v-7da4b8f3="">Discover the magic of pixelated art and get your hands on a unique piece today</p>
+                    <h2 data-v-7da4b8f3="">Related</h2>
                 </div>
                 <div class="link" data-v-7da4b8f3="">
                     <a href="/high-end-wood-wall-art-gallery" data-v-7da4b8f3="" style="color: #2C2C2C;
                     font-size: 18px;
                     font-family: Roboto-Bold;
                     text-decoration: underline;
-                    word-wrap: break-word">View all products</a>
+                    word-wrap: break-word">View all</a>
                 </div>
             </div>
         </section>
 
-        <!-- swiper-->
         <?php
         $related_products = wc_get_related_products( $product->get_id(), 3 );
-        ?>
-
-        <div data-v-857932b3="" class="swiper swiper-initialized swiper-horizontal my-swiper">
-            <div class="swiper-wrapper" style="transition-duration: 0ms; transition-delay: 0ms;">
-                <?php
-
-                if ( $related_products ) :
-                    foreach ( $related_products as $related_id ) :
-                        $related_product = wc_get_product( $related_id );
-                        $image_url       = wp_get_attachment_url( $related_product->get_image_id() );
-                        $title           = $related_product->get_name();
-                        $price           = $related_product->get_price_html();
-                        $permalink       = get_permalink( $related_id );
-                        $dimensions = get_post_meta($related_id, 'dimensions', true);
-                ?>
-                <div data-v-857932b3="" class="swiper-slide active">
-                    <a data-v-857932b3="" aria-current="page" href="<?php echo esc_url($permalink); ?>" class="router-link-active router-link-exact-active element">
-                        <div data-v-857932b3="" class="active3 image">
-                            <img data-v-857932b3="" src="<?php echo esc_url($image_url); ?>" alt=""></div>
-                        <div data-v-857932b3="" class="text">
-                        <div data-v-857932b3="" class="text-left">
-                            <div class="product-name"><?php echo esc_html( $title ); ?></div>
-                            <p class="product-dim"><?php echo esc_html( $dimensions ); ?></p>
-                        </div>
-                        <p class="product-price"><?php echo $price; ?></p>
-                        </div>
-                    </a>
-                    <!---->
-                </div>  
-                <?php
-                    endforeach;
-                    endif;
-                    ?>             
-            </div>
-        </div>
+        ?>        
 
             <!--carousel-->
 
-        <div data-v-857932b3="" class="carousel">
-            <?php
+        <div data-v-857932b3="" class="carousel swiper-other-container">
+            <div class="swiper-wrapper">
+                <?php
 
-                if ( $related_products ) :
-                    foreach ( $related_products as $related_id ) :
-                        $related_product = wc_get_product( $related_id );
-                        $image_url       = wp_get_attachment_url( $related_product->get_image_id() );
-                        $title           = $related_product->get_name();
-                        $price           = $related_product->get_price_html();
-                        $permalink       = get_permalink( $related_id );
-                        $dimensions = get_post_meta($related_id, 'dimensions', true);
-                ?>
-            <a data-v-857932b3="" aria-current="page" href="<?php echo esc_url($permalink); ?>" class="router-link-active router-link-exact-active element">
-                <div data-v-857932b3="" class="active3 image">
-                    <img data-v-857932b3="" src="<?php echo esc_url($image_url); ?>" alt=""></div>
-                <div data-v-857932b3="" class="text">
-                    <div data-v-857932b3="" class="text-left">
-                        <div class="product-name"><?php echo esc_html( $title ); ?></div>
-                        <p class="product-dim"><?php echo esc_html( $dimensions ); ?></p>
-                    </div>
-                    <p class="product-price"><?php echo $price; ?></p>
-                </div>
-            </a>
-        
-            <?php
-                    endforeach;
-                    endif;
+                    if ( $related_products ) :
+                        foreach ( $related_products as $related_id ) :
+                            $related_product = wc_get_product( $related_id );
+                            $image_url       = wp_get_attachment_url( $related_product->get_image_id() );
+                            $title           = $related_product->get_name();
+                            $price           = $related_product->get_price_html();
+                            $permalink       = get_permalink( $related_id );
+                            $dimensions = get_post_meta($related_id, 'dimensions', true);
                     ?>
+                <a data-v-857932b3="" href="<?php echo esc_url($permalink); ?>" class="swiper-slide">
+                    <div data-v-857932b3="">
+                        <img data-v-857932b3="" src="<?php echo esc_url($image_url); ?>" alt=""></div>
+                    <div class="item-text">
+                        <div data-v-857932b3="" class="item-text-left">
+                            <div class="product-name"><?php echo esc_html( $title ); ?></div>
+                            <p class="product-dim"><?php echo esc_html( $dimensions ); ?></p>
+                        </div>
+                        <div class="item-text-right">
+                            <p class="product-price"><?php echo $price; ?></p>
+                        </div>
+                    </div>
+                </a>
+            
+                <?php
+                        endforeach;
+                        endif;
+                        ?>
+            </div>
         </div>
     </main>
-    <main data-v-d974372f="" data-v-4beb8d90="">
-            <div class="where" data-v-4beb8d90="">
-              <div class="background opacity" data-v-4beb8d90=""></div>              
-          </div>
-            <div data-aos="fade-up" class="text" data-v-4beb8d90="">
-               <div class="text1" data-v-4beb8d90="">
-                  <div class="text11" data-v-4beb8d90="">
-                     <h2>EXCLUSIVE CUSTOMIZATION TOOL</h2>
+    <main video-section-comp="">
+            <div class="where" video-section-comp="">
+               <div class="swiper-video-container">
+                  <div class="swiper-wrapper">
+                        <!-- Video 1 -->
+                        <div class="swiper-slide">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/the_starry_night.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/the_starry_night.mp4" type="video/mp4">
+                                 Tu navegador no soporta la reproducción de video.
+                              </video>
+                        </div> 
+                  </div>                  
+               </div>
+            </div>
+            <div class="client fade-up" class="text" video-section-comp="">
+               <div class="text1" video-section-comp="">
+                  <div class="text11" video-section-comp="">
+                     <h2>Exclusive Customization Tool</h2>
                   </div>
-                  <div class="text12" data-v-4beb8d90="">
-                     <p >Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image.</p>
-                  </div>
-                  <div class="text13" data-v-4beb8d90="">
-                     <p >Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>
-                  </div>
-                  <a href="/product/image-customized/" class="button1" data-v-4beb8d90="">CUSTOMIZE YOURS</a>
+                  <div class="text12" video-section-comp="">
+                  <p>Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>                  
+                  </div>                  
+                  <a href="/product/image-customized/" class="button1" video-section-comp="">Customize yours</a>
                </div>
             </div>
             
          </main>
 
 <script>
-   document.addEventListener("DOMContentLoaded", function () {
-    // Seleccionar el elemento dentro de la clase "where"
-    const whereElement = document.querySelector(".where .background.opacity");
 
-    if (whereElement) {
-        // Función para alternar la clase
-        setInterval(() => {
-            if (whereElement.classList.contains("opacity")) {
-                whereElement.classList.remove("opacity");
-            } else {
-                whereElement.classList.add("opacity");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const swiper = new Swiper('.swiper-other-container', {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
             }
-        }, 3000); // Cambia cada 3 segundos
-    }
-   });
+        },        
+    });
+});
+   
 </script>

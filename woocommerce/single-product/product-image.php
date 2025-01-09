@@ -24,14 +24,13 @@ if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
 
 global $product;
 
-$columns           = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
+$columns = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
 $post_thumbnail_id = $product->get_image_id();
 ?>
 <section data-v-d974372f class="left">
 	<div data-v-d974372f class="images">
 		<?php do_action( 'woocommerce_product_thumbnails' ); ?>
 	</div>
-	<div data-v-d974372f class="image" style="<?php echo $post_thumbnail_id ? 'background-image: url(' . esc_url( wp_get_attachment_url( $post_thumbnail_id ) ) . '); background-size: cover; background-position: center;' : ''; ?>">		
+	<div id="main-product-image" data-v-d974372f class="image" style="<?php echo $post_thumbnail_id ? 'background-image: url(' . esc_url( wp_get_attachment_url( $post_thumbnail_id ) ) . '); background-size: cover; background-position: center;' : ''; ?>">		
 	</div>
-
 </section>

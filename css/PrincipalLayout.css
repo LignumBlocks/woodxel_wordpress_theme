@@ -88,11 +88,9 @@ footer[data-v-c59813ef] {
 }
 
 .footer-section2 a[data-v-c59813ef] {
-	padding: 40px;
+	padding: 30px 40px;
 	border-bottom: 1px solid var(--tertiary);
 	width: 85%;
-	font-weight: 600;
-	font-family: Montserrat
 }
 
 .section2-icons[data-v-c59813ef] {

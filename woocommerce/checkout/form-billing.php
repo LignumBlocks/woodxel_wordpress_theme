@@ -18,7 +18,7 @@ if ( version_compare( WC_VERSION, '3.0', '<' ) ) {
 
 	<?php else : ?>
 
-		<h3><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h3>
+		<h2><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h2>
 
 	<?php endif; ?>
 
@@ -76,7 +76,7 @@ if ( version_compare( WC_VERSION, '3.0', '<' ) ) {
 
 	<?php else : ?>
 
-		<h3><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h3>
+		<h2><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h2>
 
 	<?php endif; ?>
 

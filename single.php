@@ -14,6 +14,7 @@ if ( have_posts() ) :
             </section>
             <section data-v-9df49687="" class="right">
                 <main data-v-6752f03b="" data-v-9df49687="">
+                <h1 style="visibility: hidden;" data-v-9df49687=""><?php the_title(); ?></h1>
                 <?php the_content(); ?>
                 </main>                
                 
@@ -44,8 +45,7 @@ endif;
         <section data-v-9b65d5a6="" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text">
             <div data-v-9b65d5a6="" class="text1">
                 <div data-v-9b65d5a6="" class="text11">
-                    <h2>OTHER ARTICLES</h2>
-                    <p data-v-9b65d5a6="" class="p">Immerse yourself in the world of pixel art and enrich your knowledge</p>
+                    <h2>Other articles</h2>
                 </div>
                 <div data-v-9b65d5a6="" class="link">
                     <a data-v-9b65d5a6="" href="/blog-custom-wall-art-panels" class="real-link">View all articles</a>
@@ -53,7 +53,6 @@ endif;
             </div>
         </section>       
 
-        <!--carousel-->
 
         <div class="other-content">
             <div class="swiper-others-container" style="position: relative" data-v-13f77b72="">
@@ -80,16 +79,17 @@ endif;
     ?>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-        const swiper = new Swiper('.swiper-others-container', {
+        const swiper_blog_others = new Swiper('.swiper-others-container', {
             slidesPerView: 1,
+            spaceBetween: 40,
             breakpoints: {
                 768: {
                     slidesPerView: 2,
                     spaceBetween: 15,
                 },
-                1024: {
+                1000: {
                     slidesPerView: 3,
-                    spaceBetween: 20,
+                    spaceBetween: 40,
                 },            
             },
         });

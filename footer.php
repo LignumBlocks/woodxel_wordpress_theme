@@ -3,8 +3,25 @@
  * Footer template for the theme.
  */
 ?>
-<footer data-v-c59813ef="">
+<footer data-v-c59813ef="" aria-modal="true">
    <div class="footer-section2" data-v-c59813ef="">
+      <div class="text" style="margin-top: 96px">
+         <img 
+         id="site-logo" 
+         width="132" 
+         style="max-width: 100%; height: auto; width: 175px;" 
+         src="<?php 
+            $custom_logo_id = get_theme_mod('custom_logo'); 
+            if ($custom_logo_id) {
+                  $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
+                  echo esc_url($logo_url);
+            } else {
+                  echo esc_url(get_template_directory_uri() . '/assets/images/default-logo.png'); // Ruta a un logo predeterminado
+            }
+         ?>" 
+         alt="Site Logo">
+         <p style="margin-top: 32px">WoodXEL has grown into a reliable brand known for its seamless customization, exceptional quality, and dual-purpose designs that improve. Reliable brand known for its seamless customization, exceptional quality, and dual-purpose. Quality, and dual-purpose designs that improve. Reliable brand known.</p>
+      </div>  
       <a href="/blog" class="" data-v-c59813ef=""> BLOG </a>
       <a href="/contact" class="" data-v-c59813ef=""> CONTACT US </a>
       <a href="/terms" class="" data-v-c59813ef=""> TERMS OF USE </a>

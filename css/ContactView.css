@@ -85,53 +85,9 @@ a[data-v-24f50242] {
 
 h2[data-v-24f50242] {
 	font-weight: 700;
-	font-family: Montserrat;
 	font-size: 14px
 }
 
-.button2[data-v-24f50242] {
-	cursor: pointer;
-	padding: 18px 30px;
-	border-radius: 5px;
-	box-shadow: 0 2px 2px #00000042;
-	font-size: 12px;
-	transition: .2s ease;
-	font-family: Roboto-Regular;
-	text-decoration: none;
-	font-weight: 900;
-	width: 40%;
-	min-width: max-content;
-	display: flex;
-	justify-content: center
-}
-
-.button2[data-v-24f50242] {
-	border: 2px solid var(--tertiary);
-	font-family: Roboto-Medium
-}
-
-.button2[data-v-24f50242]:hover {
-	background-color: var(--tertiary) !important;
-	color: #fff
-}
-
-.input[data-v-24f50242] {
-	display: flex;
-	flex-direction: column;
-	gap: 20px
-}
-
-input[data-v-24f50242],
-textarea[data-v-24f50242] {
-	resize: none;
-	padding: 0 20px;
-	font-size: 14px;
-	height: 40px;
-	background-color: var(--secondary2);
-	font-family: Roboto-Regular;
-	border: none;
-	border-radius: 5px
-}
 
 input[data-v-24f50242]:focus,
 textarea[data-v-24f50242]:focus {
@@ -139,9 +95,12 @@ textarea[data-v-24f50242]:focus {
 }
 
 textarea[data-v-24f50242] {
-	padding: 20px;
+	padding: 15px;
 	height: 200px;
-	font-family: var()
+	background-color: var(--secondary2);
+	width: 100%;
+	border-radius: 4px;
+	border: 0;
 }
 
 .texts[data-v-24f50242] {
@@ -153,9 +112,12 @@ textarea[data-v-24f50242] {
 .p1[data-v-24f50242],
 .p2[data-v-24f50242] {
 	width: 100%;
+}
+
+.p2[data-v-24f50242] {
+	gap: 20px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px
 }
 
 .text11[data-v-24f50242] {
@@ -188,7 +150,7 @@ span[data-v-24f50242] {
 
 @media (min-width: 1000px) {
 	main[data-v-24f50242] {
-		padding: 130px 10%
+		padding: 130px 12%
 	}
 
 	.text11[data-v-24f50242] {
@@ -197,24 +159,6 @@ span[data-v-24f50242] {
 
 	h1[data-v-24f50242] {
 		font-size: 36px
-	}
-
-	input[data-v-24f50242],
-	textarea[data-v-24f50242] {
-		font-size: 20px
-	}
-
-	input[data-v-24f50242] {
-		height: 60px
-	}
-
-	.button2[data-v-24f50242] {
-		border: 4px solid var(--tertiary);
-		border-radius: 8px;
-		padding: 21px 40px;
-		font-size: 20px;
-		width: 45%;
-		min-width: max-content
 	}
 
 	h2[data-v-24f50242],
@@ -231,6 +175,10 @@ span[data-v-24f50242] {
 	.p1[data-v-24f50242],
 	.p2[data-v-24f50242] {
 		width: 50%;
-		gap: 50px
+	}
+	.contat-form-elements{
+		display: flex;
+    	flex-direction: column;
+    	gap: 32px;
 	}
 }

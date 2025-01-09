@@ -1,7 +1,7 @@
 <?php
 get_header(); // Incluye el header.php
 ?>
-<main class="video-section">
+<main class="video-section" aria-modal="true">
    <div class="content">
       <h1 class="home-title">Custom Handcrafted Pixel Art</h1>
       <p>Transform Any Image Into a Unique Pixelated Wood Art Piece, where each piece is meticulously crafted with precision and artistry to bring out the finest details.</p>
@@ -9,13 +9,13 @@ get_header(); // Incluye el header.php
    </div>
 </main>
 
-<main id="main-content">
-<main class="content-section">
+<main id="main-content" aria-modal="true">
+<main class="content-section" aria-modal="true">
       <div class="gallery-text" data-v-e2679564="">
-         <div class="text" data-v-e2679564="">
+         <div data-v-e2679564="">
             <h2>Explore Our Gallery</h1>
          </div>
-        <!--  <a href="/high-end-wood-wall-art-gallery" class="link" >View all</a> -->
+        <a href="/high-end-wood-wall-art-gallery" class="link" >View all</a>
       </div>
       <section class="carousel2" data-v-e2679564="" data-v-13f77b72="">         
          <div class="swiper-home-container" style="position: relative" data-v-13f77b72="">
@@ -77,7 +77,8 @@ get_header(); // Incluye el header.php
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text" data-v-194c7055="">
          <div class="text1" data-v-194c7055="">
             <h2>Exclusive Customization Tool</h2>
-            <p >Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>
+            <p >Unleash your creativity with our exclusive customization tool, designed to make crafting your masterpiece effortless. Personalize any design from our curated gallery or transform your own image into a unique work of custom pixelated wood art.</p>
+            <p >Bring your vision to life with a piece that not only reflects your personal style but also enhances your space with its artistic craftsmanship and functional acoustic design.</p>
          </div>
          <a aria-current="page" href="/image-customized" class="router-link-active router-link-exact-active button1" data-v-194c7055="">Customize yours</a>
       </div>
@@ -98,8 +99,8 @@ get_header(); // Incluye el header.php
             <div class="text" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-v-56ed5e91="">
                <div class="text1" data-v-56ed5e91="">
                   <h2>Handcrafted Artistic Innovation</h2>
-                  <p >We are a vibrant collective of experienced craftsmen, united by a passion for transforming memories into masterpieces of pixelated wood art. </p>
-                  <p >That not only have an artistic purpose but, due to their structure, disperse the incident sound energy evenly and in different directions, thus creating an enveloping sound that improves the acoustics of any space.</p>
+                  <p >At Woodxel, we are driven by a passion for turning cherished memories into functional works of art. Our handcrafted pieces not only elevate your decor but also contribute to a more balanced and harmonious acoustic environment.</p>
+                  <p >Each creation reflects a perfect balance of artistic craftsmanship, sustainable materials, and innovative design, delivering unmatched beauty and functionality. Whether for your home, office, or studio, Woodxel’s designs transform your space with style and purpose.</p>
                </div>
                <a href="/innovation" class="button1" data-v-56ed5e91="">Learn more about</a>
             </div>
@@ -115,15 +116,7 @@ get_header(); // Incluye el header.php
                <a href="/pixelated-wood-art-masterpieces-about-us" class="button1" >Learn more about</a>
             </div>
             <div class="about-image" data-v-5cdffde3="">
-               <div class="left" data-v-5cdffde3="">
-                  <div class="recorte-contenedor" data-v-5cdffde3="">
-                     <div class="recorte" data-v-5cdffde3=""></div>
-                  </div>
-                  <div class="man" data-v-5cdffde3=""></div>
-               </div>
-               <div class="right" data-v-5cdffde3="">
-                  <div class="right-background" data-v-5cdffde3=""></div>
-               </div>
+               
             </div>
          </main>         
 
@@ -133,17 +126,49 @@ get_header(); // Incluye el header.php
                   <div class="swiper-wrapper">
                         <!-- Video 1 -->
                         <div class="swiper-slide">
-                              <video class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/customer_chapling.mp4">
-                                 <source src="http://w2.local/wp-content/uploads/2024/12/customer_chapling.mp4" type="video/mp4">
-                                 Tu navegador no soporta la reproducción de video.
-                              </video>
+                           <img class="carousel-image-shot" src="http://w2.local/wp-content/uploads/2024/12/interview1.png" alt="Descripción de la imagen 1">
+                           <div class="play-icon interview" data-video-url="http://w2.local/wp-content/uploads/2024/12/customer_chapling.mp4">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="109" height="113" viewBox="0 0 109 113" fill="none">
+                                 <g filter="url(#filter0_d_3424_12817)">
+                                       <path d="M54.914 0C27.63 0 5.53125 23.0462 5.53125 51.5C5.53125 79.9538 27.63 103 54.914 103C82.1979 103 104.297 79.9538 104.297 51.5C104.297 23.0462 82.1979 0 54.914 0ZM45.0374 74.675V28.325L74.6671 51.5L45.0374 74.675Z" fill="#E8E2CF"/>
+                                 </g>
+                                 <defs>
+                                       <filter id="filter0_d_3424_12817" x="0.963231" y="0" width="107.902" height="112.136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                          <feOffset dy="4.56802"/>
+                                          <feGaussianBlur stdDeviation="2.28401"/>
+                                          <feComposite in2="hardAlpha" operator="out"/>
+                                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3424_12817"/>
+                                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3424_12817" result="shape"/>
+                                       </filter>
+                                 </defs>
+                              </svg>
+                           </div>
                         </div>
                         <!-- Agrega más videos aquí -->
                         <div class="swiper-slide">
-                              <video class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/customer_chapling.mp4">
-                                 <source src="http://w2.local/wp-content/uploads/2024/12/customer_chapling.mp4" type="video/mp4">
-                                 Tu navegador no soporta la reproducción de video.
-                              </video>
+                           <img class="carousel-image-shot" src="http://w2.local/wp-content/uploads/2024/12/interview2.png" alt="Descripción de la imagen 1">
+                           <div class="play-icon interview" data-video-url="http://w2.local.com/wp-content/uploads/2024/12/interview_mouses.mp4">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="109" height="113" viewBox="0 0 109 113" fill="none">
+                                 <g filter="url(#filter0_d_3424_12817)">
+                                       <path d="M54.914 0C27.63 0 5.53125 23.0462 5.53125 51.5C5.53125 79.9538 27.63 103 54.914 103C82.1979 103 104.297 79.9538 104.297 51.5C104.297 23.0462 82.1979 0 54.914 0ZM45.0374 74.675V28.325L74.6671 51.5L45.0374 74.675Z" fill="#E8E2CF"/>
+                                 </g>
+                                 <defs>
+                                       <filter id="filter0_d_3424_12817" x="0.963231" y="0" width="107.902" height="112.136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                          <feOffset dy="4.56802"/>
+                                          <feGaussianBlur stdDeviation="2.28401"/>
+                                          <feComposite in2="hardAlpha" operator="out"/>
+                                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3424_12817"/>
+                                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3424_12817" result="shape"/>
+                                       </filter>
+                                 </defs>
+                              </svg>
+                           </div>
                         </div>
                   </div>
                   <!-- Botones de navegación -->
@@ -159,14 +184,14 @@ get_header(); // Incluye el header.php
                   </div>
                </div>
             </div>
-            <div class="client fade-up" class="text" client-opp-comp="">
+            <div class="client fade-up text" client-opp-comp="">
                <div class="text1" client-opp-comp="">
                   <div class="text11" client-opp-comp="">
                      <h2>Transformative Client Experiences</h2>
                   </div>
                   <div class="text12" client-opp-comp="">
-                  <p>We are a vibrant collective of experienced craftsmen, united by a passion for transforming memories into masterpieces of pixelated wood art.</p>
-                  <p>That not only have an artistic purpose but, due to their structure, disperse the incident sound energy evenly and in different directions, thus creating an enveloping sound that improves the acoustics of any space.</p>
+                  <p>Our clients trust us to transform their cherished memories into functional wooden art that brings new life to their spaces. From enriching living rooms to enhancing professional studios, our acoustic wooden art balances visual elegance with sound harmony.</p>
+                  <p>Every piece we create is designed to resonate with your story, combining artistic craftsmanship and thoughtful functionality. Let us help you craft a masterpiece that not only decorates but also elevates your environment.</p>
                   </div>                  
                   <a href="/product/image-customized/" class="button1" client-opp-comp="">Customize yours</a>
                </div>
@@ -174,9 +199,9 @@ get_header(); // Incluye el header.php
             
          </main>
 
-         <main data-v-1fa46bc7="">
+         <main data-v-1fa46bc7="" class="hm">
             <div class="gallery-text" data-v-1fa46bc7="">
-               <div class="text" data-v-1fa46bc7="">
+               <div data-v-1fa46bc7="">
                   <h2 class="blog-section">Our Blog</h2>
                </div>
                <a href="/blog-custom-wall-art-panels" class="link" >View all articles</a>
@@ -232,17 +257,7 @@ get_header(); // Incluye el header.php
                </div>
             </section>
          </main>
-   
-   <!-- Modal -->
-   <div id="video-modal" class="modal" style="display: none;">
-      <div class="modal-content">
-         <span class="close-modal">&times;</span>
-         <video controls id="modal-video" class="full-width-video">
-               <source src="" type="video/mp4">
-               Tu navegador no soporta la reproducción de video.
-         </video>
-      </div>
-   </div>        
+        
 
               
 
@@ -250,6 +265,31 @@ get_header(); // Incluye el header.php
 
 <script>
    document.addEventListener("DOMContentLoaded", () => {
+
+      const swiper_gallery = new Swiper('.swiper-home-container', {
+        speed: 400,
+        slidesPerView: 1,
+        spaceBetween : 5,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1440: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+        },
+    });
+
       const swiper = new Swiper('.swiper-video-container', {
         slidesPerView: 1,
         navigation: {
@@ -258,34 +298,28 @@ get_header(); // Incluye el header.php
         },     
     });
 
-    /* // Seleccionar elementos del modal
-    const modal = document.getElementById('video-modal');
-    const modalVideo = document.getElementById('modal-video');
-    const closeModal = document.querySelector('.close-modal');
 
-    // Agregar evento a cada video en el carrusel
-    document.querySelectorAll('.carousel-video').forEach(video => {
-        video.addEventListener('click', () => {
-            const videoSrc = video.getAttribute('data-video');
-            modalVideo.querySelector('source').src = videoSrc;
-            modalVideo.load(); // Recargar el video en el modal
-            modal.style.display = 'flex'; // Mostrar el modal
-        });
-    });
 
-    // Cerrar el modal
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-        modalVideo.pause(); // Detener el video al cerrar el modal
-    });
 
-    // Cerrar el modal al hacer clic fuera del contenido
-    modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-            modalVideo.pause();
+   document.querySelectorAll('.play-icon').forEach(icon => {
+   icon.addEventListener('click', function() {
+        const videoUrl = this.getAttribute('data-video-url');
+        
+        // Cargar la URL del video en el popup
+        const videoElement = document.querySelector('#popup-video-source');
+        videoElement.setAttribute('src', videoUrl);
+
+        // Obtener el elemento de video y reproducirlo
+        const videoPopup = document.querySelector('#video-popup');
+        videoPopup.load(); // Vuelve a cargar el video para asegurarse de que se cargue el nuevo src
+        videoPopup.play(); // Reproduce el video
+
+        // Abrir el popup (usando Popup Maker)
+        if (typeof PUM !== 'undefined' && PUM.open) {
+            PUM.open(4279); // 123 es el ID del popup de Popup Maker
         }
-    }); */
+    });
+   });
 });
 
 </script>

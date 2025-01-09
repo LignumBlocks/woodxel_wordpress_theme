@@ -55,7 +55,7 @@ if ( function_exists( 'wc_get_checkout_url' ) ) {
 
 			</div>
 			<div class="eut-column eut-column-1-3 eut-tablet-column-1-2 eut-tablet-sm-column-1">
-				<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+				<h2 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h2>
 
 					<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

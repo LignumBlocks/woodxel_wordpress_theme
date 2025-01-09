@@ -15,21 +15,19 @@ div.swiper-video-next {
 } 
 
 main[client-opp-comp] {
-    display: flex !important;
-    width: 100% !important;
-    height: 751px !important; /* Ajusta según tus necesidades */
+    display: flex;
+    width: 100%;
+	flex-direction: column;
     box-sizing: border-box;
 }
 
 
-.where {
-    width: 50% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    background-color: #f5f5f5 !important; /* Cambia esto según tu diseño */
-	overflow: hidden;
+div[client-opp-comp].where {
+    width: 100% ;
+    background-color: #f5f5f5; 
 	position: relative;
+	order: 1;
+	overflow: hidden;
 }
 
 .swiper-video-container {
@@ -47,13 +45,13 @@ main[client-opp-comp] {
     object-fit: cover;
 }
 
-.client.fade-up {
-    width: 50%;
+main[client-opp-comp] .client.fade-up {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-	padding: 0 10% 0 5%;
+	padding: 96px 14% 40px;
 }
 
 h1[client-opp-comp] {
@@ -69,7 +67,7 @@ h2[client-opp-comp] {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	text-align: left
+	text-align: center;
 }
 
 .text11 p[client-opp-comp] {
@@ -110,13 +108,23 @@ h2[client-opp-comp] {
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
+
+	main[client-opp-comp] .client.fade-up{
+		width: 50%;
+		padding: 0 12% 0 5%;
+	}
+
+
+
+	div[client-opp-comp].where {
+		order: 0;
+		width: 50% ;
+	}
 
 	.text[client-opp-comp] {
 		position: relative;
-		width: 100%;
 		display: flex;
-		flex-direction: column;
 		text-align: left;
 		padding: 92px 10% 92px 5%;
 		order: 0;
@@ -138,8 +146,12 @@ h2[client-opp-comp] {
 
 	.last {
 		color: var(--secondary);
-		font-family: Montserrat;
 		font-weight: 700;
 		font-size: 18px
+	}
+
+	main[client-opp-comp] {
+		height: 663px;
+		flex-direction: row;
 	}
 }

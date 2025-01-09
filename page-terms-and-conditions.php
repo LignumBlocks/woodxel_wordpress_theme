@@ -10,17 +10,15 @@ get_header();
 ?>
 
 <main class="terms-and-conditions">
-   <header data-v-5ab4b673="">
-      <div class="text" data-v-5ab4b673="">
-         <div class="background" data-v-5ab4b673=""></div>
-         <h1 class="header" data-v-5ab4b673="">TERMS OF USE</h1>
-         <p class="header" data-v-5ab4b673="">A set of regulations and guidelines that users must follow in order to use the site properly.</p>
-      </div>
-   </header>
+   <header data-v-9bc466b2="" class="page">
+        <div data-v-9bc466b2="">
+            <h1 data-v-9bc466b2="">TERMS OF USE</h1>
+            <p data-v-9bc466b2="">A set of regulations and guidelines that users must follow in order to use the site properly.</p>
+        </div>
+    </header>   
    <main data-v-29e1008a="">
       <div class="text11" data-v-29e1008a="">
          <h2>OVERVIEW</h2>
-         <p data-v-29e1008a="">Please read and understand these terms before using the site</p>
       </div>
       <div class="texts" data-v-29e1008a="">
          <div class="p1" data-v-29e1008a="">

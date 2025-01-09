@@ -6,10 +6,9 @@
 }
 
 main[data-v-8a669d02] {
-	padding: 80px 6%;
+	padding: 96px 5%;
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
 	justify-content: stretch;
 	align-items: stretch;
 	background-color: var(--secondary)
@@ -47,7 +46,7 @@ h2[data-v-8a669d02] {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	text-align: left
+	text-align: center
 }
 
 .text1[data-v-8a669d02] {
@@ -62,14 +61,6 @@ h2[data-v-8a669d02] {
 	font-family: Roboto-Light;
 	font-weight: 900;
 	text-decoration: underline
-}
-
-.text11[data-v-8a669d02],
-.text12[data-v-8a669d02],
-.text13[data-v-8a669d02] {
-	display: flex;
-	flex-direction: column;
-	gap: 10px
 }
 
 .text11 p[data-v-8a669d02] {
@@ -139,7 +130,6 @@ h2[data-v-8a669d02] {
 }
 
 .item-text h2[data-v-8a669d02] {
-	font-family: Montserrat;
 	font-weight: 700
 }
 
@@ -220,8 +210,7 @@ span[data-v-8a669d02] {
 
 @media (min-width: 1000px) {
 	main[data-v-8a669d02] {
-		padding: 130px 10%;
-		gap: 70px
+		padding: 96px 12%;
 	}
 
 	.grid-item[data-v-8a669d02] {
@@ -248,13 +237,6 @@ span[data-v-8a669d02] {
 		flex-direction: row
 	}
 
-	.text11[data-v-8a669d02] {
-		display: flex;
-		flex-direction: row;
-		gap: 30px;
-		align-items: center
-	}
-
 	.text12[data-v-8a669d02] {
 		display: flex;
 		flex-direction: row;
@@ -263,7 +245,6 @@ span[data-v-8a669d02] {
 
 	.text[data-v-8a669d02] {
 		justify-content: space-between;
-		text-align: left;
 		gap: 50px
 	}
 
@@ -316,10 +297,6 @@ span[data-v-8a669d02] {
 		padding: 30px
 	}
 
-	.text11[data-v-8a669d02] {
-		width: 70%
-	}
-
 	.text11 h1[data-v-8a669d02] {
 		min-width: max-content
 	}
@@ -350,12 +327,17 @@ span[data-v-8a669d02] {
 	transform: translateY(-10px); /* Efecto hover: eleva la tarjeta */
 	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
+
+  .blog .card-image {
+	height: 464px;
+	width: 464px;
+  }
   
   /* Imagen de la tarjeta */
   .card-image img {
-	width: 100%;
-	height: auto;
-	display: block;
+	width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
   }
   
   /* Contenido de la tarjeta */
@@ -371,7 +353,7 @@ span[data-v-8a669d02] {
   }
   
   .card-content p {
-	font-size: 0.875rem;
+	font-size: 0.8889rem;
 	line-height: 1.5;
 	overflow: hidden;
 	display: -webkit-box;

@@ -5,6 +5,12 @@ main[data-v-43663689] {
 	padding: 96px 5%
 }
 
+.text22[data-v-9a2fb207] {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px
+}
+
 .woocommerce form.login, .woocommerce form.register {
     border: 0 !important;
     padding: 20px 20px 20px 0 !important;
@@ -177,8 +183,13 @@ span[data-v-43663689] {
 }
 
 @media (min-width: 1000px) {
+
+	.text22[data-v-9a2fb207] {
+		gap: 32px;
+	}
+
 	main[data-v-43663689] {
-		padding: 130px 10%
+		padding: 130px 12%
 	}
 
 	input[type=text][data-v-43663689],
@@ -251,27 +262,11 @@ header[data-v-7a8dce87] {
 	left: 0
 }
 
-.text h1[data-v-7a8dce87] {
-	font-size: 20px;
-	z-index: 9999;
-	color: var(--secondary)
-}
-
 .text p[data-v-7a8dce87] {
 	font-weight: 400;
 	z-index: 9999;
 	font-size: 17px;
 	color: var(--secondary)
-}
-
-@media (min-width:700px) {
-	.text h1[data-v-7a8dce87] {
-		font-size: 34px
-	}
-
-	.text p[data-v-7a8dce87] {
-		font-size: 18px
-	}
 }
 
 @media (min-width:1000px) {
@@ -281,10 +276,6 @@ header[data-v-7a8dce87] {
 
 	.background[data-v-7a8dce87] {
 		background-size: 120%
-	}
-
-	.text h1[data-v-7a8dce87] {
-		font-size: 64px
 	}
 
 	.text p[data-v-7a8dce87] {

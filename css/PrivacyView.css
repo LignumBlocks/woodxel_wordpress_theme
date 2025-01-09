@@ -1,7 +1,5 @@
-header[data-v-f2be343c] {
-	width: 100%;
-	height: 100%;
-	text-align: center
+.policy .menu .button p{
+	margin-bottom: 0;
 }
 
 .text[data-v-f2be343c] {
@@ -94,10 +92,7 @@ h2[data-v-de4cbcab] {
 
 .p1[data-v-de4cbcab],
 .p2[data-v-de4cbcab] {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 20px
+	width: 100%;	
 }
 
 .text11[data-v-de4cbcab] {
@@ -126,7 +121,7 @@ h2[data-v-de4cbcab] {
 
 @media (min-width: 1000px) {
 	main[data-v-de4cbcab] {
-		padding: 130px 10%
+		padding: 130px 12%
 	}
 
 	.text11[data-v-de4cbcab] {
@@ -142,9 +137,6 @@ h2[data-v-de4cbcab] {
 	.p1[data-v-de4cbcab],
 	.p2[data-v-de4cbcab] {
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		gap: 30px
 	}
 
 	.texts[data-v-de4cbcab] {
@@ -231,9 +223,6 @@ h2[data-v-6124dd64] {
 }
 
 .p[data-v-6124dd64] {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
 	padding-top: 20px;
 	margin-top: -1000px;
 	transition: .8s ease
@@ -264,7 +253,7 @@ h2[data-v-6124dd64] {
 
 @media (min-width: 1000px) {
 	main[data-v-6124dd64] {
-		padding: 130px 10%;
+		padding: 130px 12%;
 		flex-direction: row;
 		gap: 100px
 	}

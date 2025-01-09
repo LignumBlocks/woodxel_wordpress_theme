@@ -40,8 +40,7 @@ function custom_woocommerce_catalog_ordering() {
    echo '<section data-v-0b4006ed="" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text">';
    echo '<div data-v-0b4006ed="" class="text1">';
    echo '<div data-v-0b4006ed="" class="text11">
-               <h2>PRODUCT GALLERY</h1>
-               <p data-v-0b4006ed="">Discover the Endless Possibilities of Our Wall Art Panels</p>
+               <h2>Gallery</h1>               
          </div>';
    echo '<div data-v-0b4006ed="" class="menu">';
 
@@ -58,7 +57,7 @@ function custom_woocommerce_catalog_ordering() {
    
    // Construimos el select
    echo '<select id="orderby" class="orderby custom-class" name="orderby" style="
-       width: 80%; background-color: var(--tertiary); padding: 10px 20px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; color: #ffffff;" onchange="this.form.submit()">';
+       width: 100%; background-color: var(--tertiary); padding: 10px 20px;" onchange="this.form.submit()">';
    
    foreach ( $catalog_orderby_options as $id => $name ) {
        echo '<option value="' . esc_attr( $id ) . '" ' . selected( $orderby, $id, false ) . '>' . esc_html( $name ) . '</option>';
@@ -148,41 +147,35 @@ do_action( 'woocommerce_after_main_content' );
 
 ?>
 </main>
-    <main data-v-4beb8d90="">
-            <div class="where" data-v-4beb8d90="">
-               <div class="background opacity " data-v-4beb8d90=""></div>               
-            </div>
-            <div data-aos="fade-up" class="text" data-v-4beb8d90="">
-               <div class="text1" data-v-4beb8d90="">
-                  <div class="text11" data-v-4beb8d90="">
-                     <h2>EXCLUSIVE CUSTOMIZATION TOOL</h2>
-                  </div>
-                  <div class="text12" data-v-4beb8d90="">
-                     <p>Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>
+<main video-section-comp="">
+            <div class="where" video-section-comp="">
+               <div class="swiper-video-container">
+                  <div class="swiper-wrapper">
+                        <!-- Video 1 -->
+                        <div class="swiper-slide">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/mona_lisa.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/mona_lisa.mp4" type="video/mp4">
+                                 Tu navegador no soporta la reproducción de video.
+                              </video>
+                        </div> 
                   </div>                  
-                  <a href="/product/image-customized/" class="button1" data-v-4beb8d90="">CUSTOMIZE YOURS</a>
+               </div>
+            </div>
+            <div class="client fade-up text" video-section-comp="">
+               <div class="text1" video-section-comp="">
+                  <div class="text11" video-section-comp="">
+                     <h2>Exclusive Customization Tool</h2>
+                  </div>
+                  <div class="text12" video-section-comp="">
+                  <p>Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>                  
+                  </div>                  
+                  <a href="/product/image-customized/" class="button1" video-section-comp="">Customize yours</a>
                </div>
             </div>
             
          </main>
 
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-    // Seleccionar el elemento dentro de la clase "where"
-    const whereElement = document.querySelector(".where .background.opacity");
 
-    if (whereElement) {
-        // Función para alternar la clase
-        setInterval(() => {
-            if (whereElement.classList.contains("opacity")) {
-                whereElement.classList.remove("opacity");
-            } else {
-                whereElement.classList.add("opacity");
-            }
-        }, 3000); // Cambia cada 3 segundos
-    }
-   });
-</script>
 <?php
 
 

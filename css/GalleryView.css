@@ -1,11 +1,21 @@
+#orderby {
+	color: var(--secondary);
+	border-radius: 8px;
+}
+
+
 main[data-v-0b4006ed] {
-	padding: 80px 6%;
+	padding: 96px 0;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	justify-content: stretch;
 	align-items: stretch;
 	background-color: var(--secondary)
+}
+
+.gallery-images1 p {
+	margin-bottom: 0;
 }
 
 h1[data-v-0b4006ed] {
@@ -41,12 +51,13 @@ article[data-v-0b4006ed] {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	text-align: left
+	text-align: left;
+	padding: 0 5%;
 }
 
 .text1[data-v-0b4006ed] {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 	gap: 20px
 }
@@ -82,7 +93,8 @@ article[data-v-0b4006ed] {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	min-width: 265px
+	min-width: unset;
+	width: 200px;
 }
 
 .option[data-v-0b4006ed] {
@@ -193,36 +205,30 @@ article[data-v-0b4006ed] {
 	scale: 1.2
 }
 
-.item-text[data-v-0b4006ed] {
-	height: 25%;
-	background-color: var(--secondary2);
-	padding: 10px;
+.item-text {
+	height: 20%;
+	padding: 5%;
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	align-items: center;
 }
 
-.item-text-left[data-v-0b4006ed] {
+.item-text-left {
 	display: flex;
 	flex-direction: column;
 	gap: 10px
 }
 
-.item-text-right p[data-v-0b4006ed] {
-	font-family: Montserrat;
+.item-text-right p {
 	font-weight: 500;
-	font-size: 16px
 }
 
-.item-text-left h2[data-v-0b4006ed] {
-	font-family: Montserrat;
+.item-text-left h2 {	 
 	font-weight: 700;
-	font-size: 16px
 }
 
-.item-text-left p[data-v-0b4006ed] {
-	font-family: Montserrat;
+.item-text-left p {	 
 	font-weight: 500;
-	font-size: 16px
 }
 
 .change-grid[data-v-0b4006ed] {
@@ -264,77 +270,9 @@ span[data-v-0b4006ed] {
 	opacity: 1
 }
 
-@media (min-width: 430px) {
-	.grid-item[data-v-0b4006ed] {
-		max-width: 500px;
-		margin: 0 auto
-	}
 
-	.item-text[data-v-0b4006ed] {
-		height: 20%
-	}
-
-	.image[data-v-0b4006ed] {
-		height: 80%
-	}
-}
-
-@media (min-width: 600px) {
-	.grid-item[data-v-0b4006ed] {
-		max-width: 500px;
-		margin: 0 auto
-	}
-
-	.item-text[data-v-0b4006ed] {
-		height: 20%;
-		background-color: var(--secondary2);
-		padding: 20px;
-		display: flex;
-		justify-content: space-between
-	}
-}
-
-@media (min-width: 700px) {
-
-	.text1[data-v-0b4006ed] {
-		display: flex;
-		gap: 30px
-	}
-
-	.menu[data-v-0b4006ed] {
-		width: 60%
-	}
-
-	h1[data-v-0b4006ed] {
-		font-size: 24px
-	}
-
-    h2[data-v-0b4006ed] {
-		font-size: 18px
-	}
-
-	.item-text-right p[data-v-0b4006ed] {
-		font-family: Montserrat;
-		font-weight: 500;
-		font-size: 24px
-	}
-
-	.item-text-left h2[data-v-0b4006ed] {
-		font-family: Montserrat;
-		font-weight: 700;
-		font-size: 24px
-	}
-
-	.item-text-left p[data-v-0b4006ed] {
-		font-family: Montserrat;
-		font-weight: 500;
-		font-size: 24px
-	}
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 	main[data-v-0b4006ed] {
-		padding: 130px 0;
 		gap: 30px
 	}
 
@@ -344,11 +282,6 @@ span[data-v-0b4006ed] {
 		font-size: 24px;
 		margin-top: -3px
 	}
-
-	.gallery-images1[data-v-0b4006ed] {
-		padding: 50px
-	}
-
 	.images-grid[data-v-0b4006ed] {
 		display: grid;
 		width: 100%;
@@ -360,13 +293,17 @@ span[data-v-0b4006ed] {
 	.gallery-images1[data-v-0b4006ed] {
 		display: flex;
 		flex-direction: column;
-		gap: 64px
+		gap: 64px;
+		padding: 0 10%;
 	}
 
 	.text[data-v-0b4006ed] {
 		width: 100%;
 		flex-direction: row;
-		padding: 0 10%
+		padding: 0 12%;
+		justify-content: space-between;
+		text-align: left;
+		gap: 50px
 	}
 
 	.text11[data-v-0b4006ed] {
@@ -379,12 +316,6 @@ span[data-v-0b4006ed] {
 	.text12[data-v-0b4006ed] {
 		display: flex;
 		flex-direction: row;
-		gap: 50px
-	}
-
-	.text[data-v-0b4006ed] {
-		justify-content: space-between;
-		text-align: left;
 		gap: 50px
 	}
 
@@ -410,15 +341,15 @@ span[data-v-0b4006ed] {
 	}
 
 	.menu[data-v-0b4006ed] {
-		width: unset
+		min-width: 265px;
 	}
 
 	.item-text[data-v-0b4006ed] {
-		height: 30%
+		height: 20%
 	}
 
 	.image[data-v-0b4006ed] {
-		height: 70%
+		height: 80%
 	}
 
 	.grid-item[data-v-0b4006ed] {
@@ -485,16 +416,6 @@ button[data-v-0b4006ed] {
 
 @media (min-width:1400px) {
 	.gallery-images1[data-v-0b4006ed] {
-		padding: 0 10%
-	}
-}
-
-@media (min-width:1600px) {
-	.item-text[data-v-0b4006ed] {
-		height: 20%
-	}
-
-	.image[data-v-0b4006ed] {
-		height: 80%
+		padding: 0 12%
 	}
 }

@@ -1,19 +1,22 @@
-.other-content {
-    display: flex;
-    justify-content: center;
+div[data-v-9b65d5a6].text11 h2 {
+	margin-bottom: 0%;
 }
+
 
 .my-swiper[data-v-4dac2dbf] {
 	overflow: hidden;
 	height: 500px
 }
 
-
 .image[data-v-4dac2dbf] {
 	width: 100%;
 	height: 65%;
 	overflow: hidden;
 	border-radius: 4px
+}
+
+.other-content .card-image {
+	height: 464px;
 }
 
 .text[data-v-4dac2dbf] {
@@ -51,13 +54,11 @@
 
 h1[data-v-4dac2dbf] {
 	font-size: 17px;
-	font-family: Montserrat;
 	font-weight: 700;
 	width: 100%
 }
 
 p[data-v-4dac2dbf] {
-	font-family: Montserrat;
 	font-size: 17px;
 	font-weight: 500;
 	text-overflow: ellipsis;
@@ -125,80 +126,8 @@ button:hover svg[data-v-4dac2dbf] {
 	pointer-events: none
 }
 
-@media (min-width:600px) {
-	.my-swiper[data-v-4dac2dbf] {
-		overflow: hidden;
-		height: 600px
-	}
-
-	h1[data-v-4dac2dbf] {
-		font-size: 20px;
-		font-family: Montserrat;
-		font-weight: 700;
-		width: 100%;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden
-	}
-
-	p[data-v-4dac2dbf] {
-		font-family: Montserrat;
-		font-size: 20px;
-		font-weight: 500
-	}
-}
-
-@media (min-width: 1000px) {
-	.my-swiper[data-v-4dac2dbf] {
-		display: none
-	}
-
-	.carousel[data-v-4dac2dbf] {
-		display: flex;
-		gap: 40px;
-		width: 100%;
-		height: 700px
-	}
-
-	.text[data-v-4dac2dbf] {
-		opacity: 1;
-		flex-direction: column;
-		gap: 10px;
-		padding: 25px
-	}
-
-	.element[data-v-4dac2dbf] {
-		border-radius: 8px
-	}
-}
-
-@media (min-width: 1600px) {
-	h1[data-v-4dac2dbf] {
-		font-size: 24px
-	}
-
-	p[data-v-4dac2dbf] {
-		font-size: 24px;
-		text-overflow: ellipsis
-	}
-
-	.text[data-v-4dac2dbf] {
-		opacity: 1;
-		flex-direction: column;
-		gap: 10px;
-		padding: 25px;
-		height: 30%;
-		text-overflow: ellipsis;
-		justify-content: unset
-	}
-
-	.image[data-v-4dac2dbf] {
-		height: 70%
-	}
-}
-
 main[data-v-9b65d5a6] {
-	padding: 96px 0;
+	padding: 96px 5%;
 	gap: 50px;
 	background-color: var(--secondary2);
 	overflow: hidden
@@ -235,26 +164,17 @@ h2[data-v-9b65d5a6] {
 .text[data-v-9b65d5a6] {
 	width: 100%;
 	display: flex;
-	flex-direction: column;
-	gap: 40px;
 	text-align: left;
 	padding: 0 5%;
-	margin-bottom: 30px
+	margin-bottom: 48px;
 }
 
 .text1[data-v-9b65d5a6] {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px
-}
-
-.text11[data-v-9b65d5a6],
-.text12[data-v-9b65d5a6],
-.text13[data-v-9b65d5a6] {
-	display: flex;
 	flex-direction: column;
-	gap: 10px
+	justify-content: space-between;
+	width: 100%;
+    text-align: center;
 }
 
 .text11 p[data-v-9b65d5a6] {
@@ -264,23 +184,35 @@ h2[data-v-9b65d5a6] {
 	align-items: center
 }
 
-@media (min-width: 700px) {
-	h1[data-v-9b65d5a6] {
-		font-size: 24px
-	}
 
-	.text-left p[data-v-9b65d5a6],
-	h2[data-v-9b65d5a6] {
-		font-size: 18px
-	}
-
-	.text1[data-v-9b65d5a6] {
-		display: flex;
-		gap: 30px
-	}
-}
 
 @media (min-width: 1000px) {
+	div[data-v-9b65d5a6].text11 h2 {
+		margin-bottom: 20px;
+	}
+
+	.my-swiper[data-v-4dac2dbf] {
+		display: none
+	}
+
+	.carousel[data-v-4dac2dbf] {
+		display: flex;
+		gap: 40px;
+		width: 100%;
+		height: 700px
+	}
+
+	.text[data-v-4dac2dbf] {
+		opacity: 1;
+		flex-direction: column;
+		gap: 10px;
+		padding: 25px
+	}
+
+	.element[data-v-4dac2dbf] {
+		border-radius: 8px
+	}
+
 	.carousel-item[data-v-9b65d5a6] {
 		margin: 0 10px;
 		height: 540px;
@@ -293,7 +225,7 @@ h2[data-v-9b65d5a6] {
 	}
 
 	main[data-v-9b65d5a6] {
-		padding: 130px 10%
+		padding: 130px 12%
 	}
 
 	.item-text[data-v-9b65d5a6] {
@@ -305,13 +237,8 @@ h2[data-v-9b65d5a6] {
 	}
 
 	.text[data-v-9b65d5a6] {
-		width: 100%
-	}
-
-	.text11[data-v-9b65d5a6] {
-		display: flex;
-		gap: 30px;
-		flex-direction: row
+		width: 100%;
+		margin-bottom: 0;
 	}
 
 	.text12[data-v-9b65d5a6] {
@@ -323,19 +250,18 @@ h2[data-v-9b65d5a6] {
 	.text[data-v-9b65d5a6] {
 		justify-content: space-between;
 		text-align: left;
-		gap: 50px;
 		padding: 0;
-		margin-bottom: 50px
 	}
 
 	.text1[data-v-9b65d5a6] {
-		display: flex;
-		gap: 40px
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	h1[data-v-9b65d5a6] {
 		font-size: 36px;
 		min-width: max-content
 	}
-
 }
+

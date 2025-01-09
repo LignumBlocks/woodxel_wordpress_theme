@@ -1,9 +1,10 @@
 header.page {
+    margin-top: 70px;
+    padding: 0 5%;
     position: relative;
     height: 320px;
     width: 100%;
     text-align: center;
-    text-align: center;  
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(./about-header.png);
@@ -32,17 +33,32 @@ header.page > * {
 
 header.page h1 {
     color: #FCF8EC;
-    font-size: 36px;
+    font-size: 24px;
     font-family: Roboto-Regular;
     font-weight: 700;
-    word-wrap: break-word
+    word-wrap: break-word;
+    line-height: normal;
 }
 
 header.page p {
-    font-size: 22px;
+    font-size: 16px;
     color: #FCF8EC;
     font-family: Roboto-Regular;
     font-weight: 400;
     word-wrap: break-word;
     max-width: 562px;
+}
+
+@media (min-width:1024px) {
+    header.page {
+        margin-top: 0;
+    }
+    
+    header.page h1 {
+        font-size: 36px;
+    } 
+
+    header.page p{
+        font-size: 22px;
+    }
 }

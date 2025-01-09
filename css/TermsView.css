@@ -1,7 +1,5 @@
-header[data-v-5ab4b673] {
-	width: 100%;
-	height: 100%;
-	text-align: center
+.terms-and-conditions .menu .button p{
+	margin-bottom: 0;
 }
 
 .text[data-v-5ab4b673] {
@@ -101,9 +99,6 @@ h2[data-v-29e1008a] {
 .p1[data-v-29e1008a],
 .p2[data-v-29e1008a] {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 20px
 }
 
 .text11[data-v-29e1008a] {
@@ -132,8 +127,7 @@ h2[data-v-29e1008a] {
 
 @media (min-width: 1000px) {
 	main[data-v-29e1008a] {
-		padding: 130px 10%;
-		gap: 50px
+		padding: 130px 12%;
 	}
 
 	.text11[data-v-29e1008a] {
@@ -160,9 +154,6 @@ h2[data-v-29e1008a] {
 	.p1[data-v-29e1008a],
 	.p2[data-v-29e1008a] {
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		gap: 50px
 	}
 
 	.p1[data-v-29e1008a],
@@ -239,9 +230,6 @@ h2[data-v-a0b61a67] {
 }
 
 .p[data-v-a0b61a67] {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
 	padding-top: 20px;
 	margin-top: -2000px;
 	transition: .8s ease
@@ -273,7 +261,7 @@ h2[data-v-a0b61a67] {
 
 @media (min-width: 1000px) {
 	main[data-v-a0b61a67] {
-		padding: 130px 10%;
+		padding: 130px 12%;
 		flex-direction: row;
 		gap: 100px
 	}

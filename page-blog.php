@@ -13,8 +13,7 @@ get_header();
     <section data-v-8a669d02="" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text">
         <div data-v-8a669d02="" class="text1">
             <div data-v-8a669d02="" class="text11">
-                <h2>OUR BLOG</h2>
-                <p data-v-8a669d02="">Looking to transform your space?&nbsp;Our&nbsp;custom wall art panels&nbsp;bring your unique vision to life with ease.</p>
+                <h2>Our Blog</h2>                
             </div>
         </div>
     </section>
@@ -82,19 +81,29 @@ get_header();
     </section>
     </main>
 
-    <main data-v-4beb8d90="">
-            <div class="where" data-v-4beb8d90="">
-               <div class="background opacity " data-v-4beb8d90=""></div>               
-            </div>
-            <div data-aos="fade-up" class="text" data-v-4beb8d90="">
-               <div class="text1" data-v-4beb8d90="">
-                  <div class="text11" data-v-4beb8d90="">
-                     <h2>EXCLUSIVE CUSTOMIZATION TOOL</h2>
-                  </div>
-                  <div class="text12" data-v-4beb8d90="">
-                     <p>Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>
+    <main video-section-comp="">
+            <div class="where" video-section-comp="">
+               <div class="swiper-video-container">
+                  <div class="swiper-wrapper">
+                        <!-- Video 1 -->
+                        <div class="swiper-slide">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4" type="video/mp4">
+                                 Tu navegador no soporta la reproducción de video.
+                              </video>
+                        </div> 
                   </div>                  
-                  <a href="/product/image-customized/" class="button1" data-v-4beb8d90="">CUSTOMIZE YOURS</a>
+               </div>
+            </div>
+            <div class="client fade-up text" video-section-comp="">
+               <div class="text1" video-section-comp="">
+                  <div class="text11" video-section-comp="">
+                     <h2>Exclusive Customization Tool</h2>
+                  </div>
+                  <div class="text12" video-section-comp="">
+                  <p>Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>                  
+                  </div>                  
+                  <a href="/product/image-customized/" class="button1" video-section-comp="">Customize yours</a>
                </div>
             </div>
             

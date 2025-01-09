@@ -21,8 +21,36 @@ if ( version_compare( WC_VERSION, '3.5.0', '<' ) ) {
 	</div>
 	<div class="eut-h6"><?php esc_html_e( 'No products in the cart.', 'woocommerce' ); ?></div>
 	<?php if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
-	<a class="eut-link-text eut-text-primary-1 eut-text-hover-black" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+	<a class="link eut-link-text eut-text-primary-1 eut-text-hover-black" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
 		<?php echo esc_html( apply_filters( 'woocommerce_return_to_shop_text', __( 'Return to shop', 'woocommerce' ) ) ); ?>
 	</a>
 	<?php endif; ?>
 </div>
+
+<main video-section-comp="">
+            <div class="where" video-section-comp="">
+               <div class="swiper-video-container">
+                  <div class="swiper-wrapper">
+                        <!-- Video 1 -->
+                        <div class="swiper-slide">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4" type="video/mp4">
+                                 Tu navegador no soporta la reproducción de video.
+                              </video>
+                        </div> 
+                  </div>                  
+               </div>
+            </div>
+            <div class="client fade-up" class="text" video-section-comp="">
+               <div class="text1" video-section-comp="">
+                  <div class="text11" video-section-comp="">
+                     <h2>Exclusive Customization Tool</h2>
+                  </div>
+                  <div class="text12" video-section-comp="">
+                  <p>Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>                  
+                  </div>                  
+                  <a href="/product/image-customized/" class="button1" video-section-comp="">Customize yours</a>
+               </div>
+            </div>
+            
+         </main>

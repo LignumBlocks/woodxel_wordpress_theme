@@ -17,19 +17,20 @@ div.swiper-video-next {
 main[video-section-comp] {
     display: flex !important;
     width: 100% !important;
-    height: 623px !important; /* Ajusta según tus necesidades */
     box-sizing: border-box;
+	flex-direction: column;
 }
 
 
-.where {
-    width: 50% !important;
+div[video-section-comp].where {
+    width: 100% ;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     background-color: #f5f5f5 !important; /* Cambia esto según tu diseño */
 	overflow: hidden;
 	position: relative;
+	order: 2;
 }
 
 .swiper-video-container {
@@ -45,16 +46,19 @@ main[video-section-comp] {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+    object-position: center top;
 }
 
-.client.fade-up {
-    width: 50%;
+main[video-section-comp] .client.fade-up {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-	padding: 0 10% 0 5%;
+	padding: 96px 14% 40px;
 	background-color: var(--secondary2);
+	order: 1;
+	text-align: center;
 }
 
 h1[video-section-comp] {
@@ -70,7 +74,6 @@ h2[video-section-comp] {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	text-align: left
 }
 
 .text11 p[video-section-comp] {
@@ -111,7 +114,24 @@ h2[video-section-comp] {
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
+
+	div[video-section-comp].where{
+		width: 50%;
+		order: 1;
+	}
+
+	main[video-section-comp] .client.fade-up{
+		padding: 0 12% 0 5%;
+		width: 50%;
+		order: 2;
+		text-align: left;
+	}
+
+	main[video-section-comp] {
+		height: 623px;
+		flex-direction: row;
+	}
 
 	.text[video-section-comp] {
 		position: relative;
@@ -139,7 +159,6 @@ h2[video-section-comp] {
 
 	.last {
 		color: var(--secondary);
-		font-family: Montserrat;
 		font-weight: 700;
 		font-size: 18px
 	}

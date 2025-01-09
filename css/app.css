@@ -62,41 +62,103 @@ h6 {
 	color: var(--tertiary)
 }
 
-.input-label {
-    /*font-size: 18px;*/
-    font-family: Roboto-Medium;
-    word-wrap: break-word;
+.hm {
+    display: none;
 }
 
-input[type=text], input[type=password], input[type=email] {
+div.text {
+    text-align: center;
+    width: 100%;
+    order: 0;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 14%;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.6667rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p.product-dim {
+    margin-bottom: 0;
+}
+
+.input-label {
+    font-family: Roboto-Medium;
+    word-wrap: break-word;
+    line-height: 2;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
 	color: var(--tertiary);
     /*font-size: 18px !important;*/
-    height: 60px !important;
+    height: 48px !important;
     background-color: var(--secondary2);
     border: none !important;
     padding: 15px !important;
+    width: 100%;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    appearance: none; /* Elimina el estilo nativo del checkbox */
+    -webkit-appearance: none; /* Compatibilidad con Safari */
+    -moz-appearance: none; /* Compatibilidad con Firefox */
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--tertiary); /* Color del borde */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: var(--secondary); /* Color de fondo */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: inline-flex; /* Mantener contenido centrado */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    box-sizing: border-box; /* Asegurar que el padding no afecta el tamaño */
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+}
+
+/* Estilo cuando el checkbox está marcado */
+input[type="checkbox"]:checked {
+    background-color: var(--tertiary); /* Fondo cuando está marcado */
+    border-color: var(--tertiary); /* Color del borde cuando está marcado */
+}
+
+/* Ícono de check (predefinido, sin movimiento) */
+input[type="checkbox"]::before {
+    content: '✔'; /* Ícono de check */
+    color: transparent; /* Transparente por defecto */
+    font-size: 14px; /* Tamaño del check */
+    position: absolute; /* No afecta al flujo del documento */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%) scale(0); /* Ocultar con escala inicial */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Mostrar el ícono de check cuando está marcado */
+input[type="checkbox"]:checked::before {
+    color: var(--secondary); /* Color del check */
+    transform: translate(-50%, -50%) scale(1); /* Mostrar con escala normal */
 }
 
 .button2 {
-    /*font-size: 18px !important;*/
-    padding: 21px 10px !important;
+    height: 48px;
+    background-color: var(--secondary) !important;
+    font-size: 16px !important;
+    padding: 0 45px !important;
     border: 2px solid var(--tertiary) !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     transition: .2s ease !important;
-    width: 50%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    width: max-content; /* Ajusta el ancho según el contenido */
     font-family: Roboto-Medium !important;
-    max-width: 200px !important;
     cursor: pointer;
-    font-weight: 500 !important;
-
-}
-
-.button2:hover {
-    background-color: var(--tertiary) !important;
-    color: #fff !important;
 }
 
 .button1 {
@@ -116,9 +178,15 @@ input[type=text], input[type=password], input[type=email] {
     line-height: 1;
     padding: 21px 45px;
 }
+
 .button1:hover {
 	background-color: var(--secondary2);
 	color: var(--tertiary)
+}
+
+.button2:hover {
+    background-color: var(--tertiary) !important;
+    color: #fff !important;
 }
 
 
@@ -148,7 +216,7 @@ li {
 }
 
 body {
-	background-color: #ffffff;
+	background-color: var(--secondary);
 	max-width: 1920px;
 	margin: 0 auto;
 	width: 100%;
@@ -185,7 +253,6 @@ p {
 
 div.product-name {
     font-size: 20px;
-    font-family: Montserrat;
     font-weight: 700;
     width: 100%;
     white-space: nowrap;
@@ -194,15 +261,29 @@ div.product-name {
 }
 
 p.product-price {
-    font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+
+    div.text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        align-items: start;
+    }
+
+    .hm {
+        display: block;
+    }
 }
 
 @media (min-width: 1500px) {
     div.product-name {
         font-size: 20px;
-        font-family: Montserrat;
         font-weight: 700;
         width: 100%;
         white-space: nowrap;
@@ -211,7 +292,6 @@ p.product-price {
     }
 
     p.product-price {
-        font-family: Montserrat;
         font-size: 20px;
         font-weight: 500;
     }
@@ -220,7 +300,6 @@ p.product-price {
 @media (min-width: 1300px) {
     div.product-name {
         font-size: 20px;
-        font-family: Montserrat;
         font-weight: 700;
         width: 100%;
         white-space: nowrap;
@@ -229,7 +308,6 @@ p.product-price {
     }
 
     p.product-price {
-        font-family: Montserrat;
         font-size: 20px;
         font-weight: 500;
     }

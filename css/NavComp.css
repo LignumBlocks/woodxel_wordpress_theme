@@ -1,3 +1,23 @@
+.nav-right .cart-count {
+	background-color: #FD3032;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+	line-height: 20px;
+}
+
+
 .nav-container {
 	position: relative;
 	left: -48px;

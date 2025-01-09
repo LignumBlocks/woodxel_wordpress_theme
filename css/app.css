@@ -66,6 +66,10 @@ h6 {
     display: none;
 }
 
+.top-96 {
+    margin-top: 96px !important;
+}
+
 div.text {
     text-align: center;
     width: 100%;

@@ -27,14 +27,14 @@ if ( version_compare( WC_VERSION, '3.5.0', '<' ) ) {
 	<?php endif; ?>
 </div>
 
-<main video-section-comp="">
+<main video-section-comp="" class="padding-out">
             <div class="where" video-section-comp="">
                <div class="swiper-video-container">
                   <div class="swiper-wrapper">
                         <!-- Video 1 -->
                         <div class="swiper-slide">
-                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4">
-                                 <source src="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4" type="video/mp4">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/the_son_of-_man.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/the_son_of-_man.mp4" type="video/mp4">
                                  Tu navegador no soporta la reproducción de video.
                               </video>
                         </div> 

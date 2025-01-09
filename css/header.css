@@ -15,6 +15,7 @@ header.page {
     overflow: hidden;
 }
 
+
 header.page::before {
     content: "";
     position: absolute;

@@ -142,7 +142,7 @@
 
 .woocommerce .woocommerce-message {
 	background-color: #cccccc;
-	color: var(--secondary);
+	color: var(--tertiary);
 }
 
 /* =============================================================================
@@ -1256,9 +1256,6 @@ a.eut-reset-var i {
 /* =============================================================================
 14. Checkout
 ============================================================================= */
-.eut-billing-content {
-	padding-right: 0 10% 96px;
-}
 
 .woocommerce-billing-fields {
 	margin-bottom: 5.000em;
@@ -1528,4 +1525,87 @@ ul.order_details {
 .woocommerce  .select2-container--default .select2-selection--single .select2-selection__arrow{
 	height: 46px;
 	right: 16px;
+}
+
+body.woocommerce-checkout footer{
+	display: none;	
+}
+
+body.woocommerce-checkout .eut-container {
+	padding: 96px 12%;
+}
+
+.eut-bg-primary-1 {
+    font-family: Roboto-Medium;
+    background: #FD3032;
+    color: #FCF8EC;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 48px;
+    display: inline-flex !important; /* Utiliza Flexbox para manejar la alineación */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura el centrado del texto */   
+    line-height: 1;
+    padding: 21px 45px;
+}
+
+.eut-bg-primary-1:hover {
+	background-color: var(--secondary2);
+	color: var(--tertiary)
+}
+
+.woocommerce-form-login__rememberme input[type="checkbox"],
+.woocommerce-form-login__rememberme span {
+	vertical-align: middle;
+}
+
+.woocommerce-form-login .submit-area.form-row {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+@media only screen and (min-width: 1000px) {
+
+.woocommerce-form-login .submit-area.form-row {
+	float: left;
+	gap: 15px;
+}
+
+.woocommerce-form-login .lost_password{
+	float: right;
+}
+
+.woocommerce-form-login .woocommerce-LostPassword.lost_password {
+	margin-top: 32px;
+}
+
+.form-row.login-buttons {
+	float: left;
+}
+}
+
+#ship-to-different-address label, #ship-to-different-address input {
+	vertical-align: middle;
+}
+
+[data-title="Shipping"] button[name="calc_shipping"] {
+		height: 48px;
+		background-color: var(--secondary) !important;
+		font-size: 16px !important;
+		padding: 0 45px !important;
+		border: 2px solid var(--tertiary) !important;
+		border-radius: 4px !important;
+		transition: .2s ease !important;
+		width: max-content; /* Ajusta el ancho según el contenido */
+		font-family: Roboto-Medium !important;
+		cursor: pointer;
+}
+
+[data-title="Shipping"] button[name="calc_shipping"]:hover{
+    background-color: var(--tertiary) !important;
+    color: #fff !important;
 }

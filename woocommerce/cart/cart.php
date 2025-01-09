@@ -182,6 +182,43 @@ do_action( 'woocommerce_before_cart' ); ?>
     </div>
 </form>
 
-<?php do_action( 'woocommerce_after_cart' );
+<?php do_action( 'woocommerce_after_cart' ); ?>
 
-//Omit closing PHP tag to avoid accidental whitespace output errors.
+<main video-section-comp="" class="padding-out top-96">
+            <div class="where" video-section-comp="">
+               <div class="swiper-video-container">
+                  <div class="swiper-wrapper">
+                        <!-- Video 1 -->
+                        <div class="swiper-slide">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/the_son_of-_man.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/the_son_of-_man.mp4" type="video/mp4">
+                                 Tu navegador no soporta la reproducción de video.
+                              </video>
+                        </div> 
+                  </div>                  
+               </div>
+            </div>
+            <div class="client fade-up" class="text" video-section-comp="">
+               <div class="text1" video-section-comp="">
+                  <div class="text11" video-section-comp="">
+                     <h2>Exclusive Customization Tool</h2>
+                  </div>
+                  <div class="text12" video-section-comp="">
+                  <p>Using our exclusive customization tool, you can personalize in a very easy way any piece from our collection or even create a new artwork from your own image. Create a stunning pixelated wood art masterpiece that reflects your personal style.</p>                  
+                  </div>                  
+                  <a href="/product/image-customized/" class="button1" video-section-comp="">Customize yours</a>
+               </div>
+            </div>
+            
+         </main>
+
+		<script> 
+			jQuery(function($){
+				// Detecta el cambio en el campo de cantidad
+				$('input.qty').on('change', function() {
+					// Al cambiar la cantidad, habilita el botón de actualizar
+					$('input[name="update_cart"]').prop('disabled', false);
+				});
+			});
+		</script>
+

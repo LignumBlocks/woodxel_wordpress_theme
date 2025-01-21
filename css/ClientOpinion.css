@@ -24,7 +24,6 @@ main[client-opp-comp] {
 
 div[client-opp-comp].where {
     width: 100% ;
-    background-color: #f5f5f5; 
 	position: relative;
 	order: 1;
 	overflow: hidden;
@@ -43,6 +42,7 @@ div[client-opp-comp].where {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+	margin: auto;
 }
 
 main[client-opp-comp] .client.fade-up {

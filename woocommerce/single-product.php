@@ -58,5 +58,3 @@ get_header( 'shop' ); ?>
 
 <?php
 get_footer( 'shop' );
-
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

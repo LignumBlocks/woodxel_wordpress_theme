@@ -97,4 +97,4 @@ if ( $show_customer_details ) {
 	wc_get_template( 'order/order-details-customer.php', array( 'order' => $order ) );
 }
 
-//Omit closing PHP tag to avoid accidental whitespace output errors.
+

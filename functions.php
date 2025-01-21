@@ -3,10 +3,10 @@
 function tool_enqueue_styles_and_scripts() {
 
     if ( is_single(525) ) {
-        wp_enqueue_style( 'tool-style', site_url() . '/wp-content/uploads/dist/index.CBIrpnx2.css' );
-        wp_enqueue_script( 'tool-script', site_url() . '/wp-content/uploads/dist/index.mYVHLXsH.js', array(), false, true );
+        wp_enqueue_style( 'tool-style', site_url() . '/wp-content/uploads/dist/index.CyLRoxf5.css' );
+        wp_enqueue_script( 'tool-script', site_url() . '/wp-content/uploads/dist/index.CSVxPSPw.js', array(), false, true );
 		
-        wp_localize_script('custom-script', 'wpApiSettings', array(
+        wp_localize_script('tool-script', 'wpApiSettings', array(
             'root' => esc_url_raw(rest_url()),
             'nonce' => wp_create_nonce('wp_rest') // Generación del nonce
         ));
@@ -29,8 +29,15 @@ function enqueue_swiper_assets() {
     // Swiper JS
     wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js', [], '9.0.0', true);
 
-    // Script personalizado para inicializar el carrusel
-    //wp_enqueue_script('custom-carousel-js', get_template_directory_uri() . '/js/carousel.js', ['swiper-js'], '1.0', true);
+    if (class_exists('WooCommerce')) { // Solo si WooCommerce está activo
+        wp_enqueue_script(
+            'ocultar-mensaje', 
+            get_template_directory_uri() . '/js/messages.js', 
+            array(), 
+            '1.0', 
+            true
+        );
+    }
 }
 add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
 
@@ -162,14 +169,3 @@ function customize_wpcf7_form_elements( $form ) {
 
     return $form;
 }
-
-/* add_filter( 'the_excerpt', function( $excerpt ) {
-    // Modificar el HTML del excerpt para agregar el atributo al <p>
-    $excerpt = preg_replace(
-        '/<p([^>]*)>/', 
-        '<p$1 data-v-8a669d02>', 
-        $excerpt
-    );
-
-    return $excerpt;
-} ); */

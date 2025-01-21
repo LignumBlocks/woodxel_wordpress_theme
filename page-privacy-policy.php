@@ -12,7 +12,6 @@ get_header();
 <header data-v-9bc466b2="" class="page">
    <div data-v-9bc466b2="">
       <h1 data-v-9bc466b2="">PRIVACY POLICY</h1>
-      <p data-v-9bc466b2="">Crucial information detailing how the company collects, stores, protects, and uses users' personal information.</p>
    </div>
 </header> 
 <main class="policy">  

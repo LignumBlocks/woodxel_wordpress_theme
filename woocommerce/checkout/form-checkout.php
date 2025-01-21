@@ -77,5 +77,3 @@ if ( function_exists( 'wc_get_checkout_url' ) ) {
 </form>
 
 <?php do_action( 'woocommerce_after_checkout_form', $checkout );
-
-//Omit closing PHP tag to avoid accidental whitespace output errors.

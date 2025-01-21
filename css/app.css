@@ -28,6 +28,20 @@
 	src: url(./Raleway-VariableFont_wght.ttf)
 }
 
+.woocommerce-checkout .nav-container, 
+.woocommerce-checkout .nav-right{
+    display: none;
+}
+
+
+.link.np { 
+    padding: 0;
+}
+
+.eut-icon-shop:before {
+    content: "\e603";
+}
+
 :root {
 	--primary: #FD3032;
 	--secondary: #FCF8EC;
@@ -79,6 +93,21 @@ div.text {
 	justify-content: center;
 	padding: 0 14%;
     align-items: center;
+}
+
+.button2.disabled {
+    border: 2px solid #2c2c2c70 !important;
+    color: #2c2c2c70 !important;
+
+}
+
+input.disabled{
+    color: #2c2c2c70 !important;
+}
+
+.disabled {
+    color: #fcf8ec78 !important;
+    pointer-events: none !important;
 }
 
 h2 {
@@ -153,6 +182,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .button2 {
+    color: var(--tertiary);
     height: 48px;
     background-color: var(--secondary) !important;
     font-size: 16px !important;
@@ -314,13 +344,6 @@ p.product-price {
     p.product-price {
         font-size: 20px;
         font-weight: 500;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .swiper-button-next, .swiper-button-prev {
-        display: none;
     }
 }
 

@@ -35,7 +35,6 @@ div[video-section-comp].where {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    background-color: #f5f5f5 !important; /* Cambia esto según tu diseño */
 	overflow: hidden;
 	position: relative;
 	order: 2;
@@ -51,10 +50,11 @@ div[video-section-comp].where {
 
 .carousel-video {
 	width: 100%;
+	height: auto;
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center;
 }
 
 main[video-section-comp] .client.fade-up {
@@ -64,7 +64,6 @@ main[video-section-comp] .client.fade-up {
     justify-content: center;
     box-sizing: border-box;
 	padding: 96px 14% 40px;
-	background-color: var(--secondary2);
 	order: 1;
 	text-align: center;
 }
@@ -123,9 +122,20 @@ h2[video-section-comp] {
 
 @media (min-width: 1024px) {
 
+	[video-section-comp] .swiper-video-container {
+		height: 353px;
+		overflow: hidden;
+		border-radius: 8px;
+	}
+
+	div[video-section-comp] a.button1:hover{
+		background-color: var(--secondary);
+	}
+
 	div[video-section-comp].where{
 		width: 50%;
 		order: 1;
+		padding: 0px 0 0px 12%;
 	}
 
 	main[video-section-comp] .client.fade-up{
@@ -136,8 +146,9 @@ h2[video-section-comp] {
 	}
 
 	main[video-section-comp] {
-		height: 623px;
+		height: 410px;
 		flex-direction: row;
+		margin-bottom: 150px;
 	}
 
 	.text[video-section-comp] {

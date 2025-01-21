@@ -51,4 +51,3 @@ if ( ! wp_doing_ajax() ) {
 	do_action( 'woocommerce_review_order_after_payment' );
 }
 	
-//Omit closing PHP tag to avoid accidental whitespace output errors.

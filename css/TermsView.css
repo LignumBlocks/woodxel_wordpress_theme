@@ -90,12 +90,6 @@ h2[data-v-29e1008a] {
 	font-weight: 900
 }
 
-.texts[data-v-29e1008a] {
-	display: flex;
-	gap: 30px;
-	flex-direction: column
-}
-
 .p1[data-v-29e1008a],
 .p2[data-v-29e1008a] {
 	width: 100%;
@@ -127,7 +121,7 @@ h2[data-v-29e1008a] {
 
 @media (min-width: 1000px) {
 	main[data-v-29e1008a] {
-		padding: 130px 12%;
+		padding: 150px 12%;
 	}
 
 	.text11[data-v-29e1008a] {
@@ -164,7 +158,7 @@ h2[data-v-29e1008a] {
 
 main[data-v-a0b61a67] {
 	display: flex;
-	padding: 130px 5%;
+	padding: 150px 5%;
 	flex-direction: column;
 	background-color: var(--secondary2)
 }

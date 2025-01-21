@@ -45,12 +45,6 @@ function display_dimensions() {
     }
 } */
 
-add_action( 'woocommerce_single_product_summary', 'display_empty', 9 );
-function display_empty() {
-        echo '<div class="empty full-width">';       
-        echo '</div>';
-}
-
 
 /**
  * Hook: woocommerce_before_single_product.
@@ -112,14 +106,18 @@ if ( post_password_required() ) {
                 $numero2 = (int)$matches[2];
                 // Calcular el producto
                 $blocks = $numero1 * $numero2;
-            } 
+            }
+
+            $customized_url = get_site_url(null, '/product/image-customized/', 'https');
+            $change_url = $customized_url."?hidden_image_url=".get_post_meta( $product->get_id(), 'hidden_image_url', true );
             
             ?>
 
                   <div class="part" data-v-101211cc="">
                      <h2>Description</h2>
                      <div class="info" data-v-101211cc="">
-                        <p><span data-v-101211cc="">Dimensions:</span>&nbsp;<?php echo(esc_html( $dimensions )); ?></p>
+                        <p><span data-v-101211cc="">Dimensions:</span>&nbsp;<?php echo(esc_html( $dimensions )); ?> 
+                        <a href="<?php echo $change_url;?>" class="link" style="margin-left: 20px; color: #FD3032; font-size: 16px; font-weight: 700; word-wrap: break-word; line-height: 34px">Choose another size</a></p>
                         <p><span data-v-101211cc="">Blocks count:</span>&nbsp;<?php echo(esc_html( $blocks )); ?></p>
                         <p><span data-v-101211cc="">Materials:</span>&nbsp;Poplar solid wood and water base paint.</p>
                         <p><span data-v-101211cc="">Frame:</span>&nbsp;Floating Black frame of 1″ Depth.</p>
@@ -203,8 +201,8 @@ if ( post_password_required() ) {
                   <div class="swiper-wrapper">
                         <!-- Video 1 -->
                         <div class="swiper-slide">
-                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/the_starry_night.mp4">
-                                 <source src="http://w2.local/wp-content/uploads/2024/12/the_starry_night.mp4" type="video/mp4">
+                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/charlie_chaplin.mp4">
+                                 <source src="http://w2.local/wp-content/uploads/2024/12/charlie_chaplin.mp4" type="video/mp4">
                                  Tu navegador no soporta la reproducción de video.
                               </video>
                         </div> 
@@ -243,6 +241,37 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         },        
     });
+    var checkbox = document.getElementById('confirm-checkbox');
+    var button = document.querySelector('.confirm-button');
+    
+    if (checkbox && button) {
+        checkbox.checked = false;
+        button.classList.add('disabled');
+
+        checkbox.addEventListener('change', function() {
+            if (checkbox.checked) {
+                button.classList.remove('disabled');
+            } else {
+                button.classList.add('disabled');
+            }
+        });
+    }
+
+    const message = document.querySelector('.woocommerce-message');
+
+    if (message) {
+      setTimeout(() => {
+        // Aplica el efecto de ocultar
+        message.style.transition = 'opacity 0.5s';
+        message.style.opacity = '0'; // Desaparece gradualmente
+
+        setTimeout(() => {
+          message.style.display = 'none'; // Lo elimina visualmente
+          console.log("Mensaje ocultado.");
+        }, 500); // Da tiempo para que termine la transición
+      }, 3000); // Espera 3 segundos antes de empezar a ocultarlo
+    }
 });
    
 </script>
+

@@ -1,3 +1,6 @@
+footer p,footer a,footer h2,footer h3 {
+	color: var(--secondary);
+}
 .social-container p {
     margin-bottom: 10px;
     font-weight: bold;
@@ -21,8 +24,7 @@
 }
 
 .social-icons a:hover {
-    background-color: #E8E2CF;
-    color: #2C2C2C;
+    background-color:#696762;
     transform: scale(1.1); /* Animación de agrandamiento */
 }
 
@@ -58,10 +60,9 @@ footer h2 {
 footer[data-v-c59813ef] {
 	width: 100%;
 	display: flex;
-	gap: 50px;
 	justify-content: space-evenly;
-	color: var(--tertiary);
-	background-color: var(--secondary);
+	color: var(--secondary);
+	background-color: #00000095;
 }
 
 .last {
@@ -89,14 +90,16 @@ footer[data-v-c59813ef] {
 
 .footer-section2 a[data-v-c59813ef] {
 	padding: 30px 40px;
-	border-bottom: 1px solid var(--tertiary);
+	border-bottom: 1px solid var(--secondary);
 	width: 85%;
 }
 
 .section2-icons[data-v-c59813ef] {
-	padding: 40px;
+	padding: 40px 14%;
 	display: flex;
-	gap: 20px
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .footer-section[data-v-c59813ef] {
@@ -162,6 +165,8 @@ img[data-v-c59813ef] {
 	footer[data-v-c59813ef] {
 		padding: 65px 16%;
 		font-size: 14px;
+		gap: 50px;
+
 	}
 
 	.text p[data-v-c59813ef],

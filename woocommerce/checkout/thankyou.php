@@ -72,5 +72,3 @@ do_action( 'woocommerce_before_thankyou', $order_get_id );
 	<div class="eut-h2 eut-align-center"><?php echo apply_filters( 'woocommerce_thankyou_order_received_text', esc_html__( 'Thank you. Your order has been received.', 'woocommerce' ), null ); ?></div>
 
 <?php endif;
-
-//Omit closing PHP tag to avoid accidental whitespace output errors.

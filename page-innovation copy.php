@@ -10,10 +10,9 @@ get_header();
 ?>
 <div class="innovation-container">   
    <header data-v-9bc466b2="" class="page">
-      <div style="height: 250px;  width: 100%"></div>
-      <div data-v-0b4006ed="" class="text11">
-               <h1>Handcrafted Artistic Innovation</h1> 
-      </div>
+        <div data-v-9bc466b2="">
+            <h1 data-v-9bc466b2="">HANDCRAFTED ARTISTIC INNOVATION</h1>
+        </div>
     </header>
 
    <main data-v-7d6f6b18="">      

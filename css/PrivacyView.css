@@ -84,11 +84,6 @@ h2[data-v-de4cbcab] {
 	font-weight: 900
 }
 
-.texts[data-v-de4cbcab] {
-	display: flex;
-	gap: 30px;
-	flex-direction: column
-}
 
 .p1[data-v-de4cbcab],
 .p2[data-v-de4cbcab] {
@@ -121,7 +116,7 @@ h2[data-v-de4cbcab] {
 
 @media (min-width: 1000px) {
 	main[data-v-de4cbcab] {
-		padding: 130px 12%
+		padding: 150px 12%
 	}
 
 	.text11[data-v-de4cbcab] {

@@ -40,10 +40,10 @@ function custom_woocommerce_catalog_ordering() {
    echo '<section data-v-0b4006ed="" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="text">';
    echo '<div data-v-0b4006ed="" class="text1">';
    echo '<div data-v-0b4006ed="" class="text11">
-               <h2>Gallery</h1>               
+               <h2>Gallery</h2>               
          </div>';
-   echo '<div data-v-0b4006ed="" class="menu">';
 
+   echo '<div data-v-0b4006ed="" class="menu">';
    // Abrimos el formulario
    echo '<form method="get">';
    
@@ -54,17 +54,18 @@ function custom_woocommerce_catalog_ordering() {
        }
        echo '<input type="hidden" name="' . esc_attr( $key ) . '" value="' . esc_attr( $value ) . '" />';
    }
+   echo '<div class="custom-select-wrapper">';
    
    // Construimos el select
-   echo '<select id="orderby" class="orderby custom-class" name="orderby" style="
-       width: 100%; background-color: var(--tertiary); padding: 10px 20px;" onchange="this.form.submit()">';
+   echo '<select id="orderby" class="orderby custom-class" name="orderby" onchange="this.form.submit()">';
    
    foreach ( $catalog_orderby_options as $id => $name ) {
        echo '<option value="' . esc_attr( $id ) . '" ' . selected( $orderby, $id, false ) . '>' . esc_html( $name ) . '</option>';
    }
 
    echo '</select>';
-   
+   echo '<div class="custom-arrow"></div>';
+   echo '</div>';
    // Cerramos el formulario
    echo '</form>';
    echo '</div>';

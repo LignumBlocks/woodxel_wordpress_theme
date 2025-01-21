@@ -24,5 +24,3 @@ echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 		esc_html( $product->add_to_cart_text() )
 	),
 $product );
-
-//Omit closing PHP tag to avoid accidental whitespace output errors.

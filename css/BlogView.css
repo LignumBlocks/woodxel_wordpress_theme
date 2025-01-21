@@ -86,7 +86,6 @@ h2[data-v-8a669d02] {
 .gallery-images1[data-v-8a669d02] {
 	display: flex;
 	flex-direction: column;
-	padding: 0 8%;
 	gap: 64px
 }
 
@@ -210,7 +209,7 @@ span[data-v-8a669d02] {
 
 @media (min-width: 1000px) {
 	main[data-v-8a669d02] {
-		padding: 96px 12%;
+		padding: 250px 12% 150px;
 	}
 
 	.grid-item[data-v-8a669d02] {
@@ -343,7 +342,7 @@ span[data-v-8a669d02] {
   /* Contenido de la tarjeta */
   .card-content {
 	flex: 1;
-	padding: 15px;
+	padding: 5%;
 	background-color: var(--secondary2);
   }
   
@@ -359,4 +358,5 @@ span[data-v-8a669d02] {
 	display: -webkit-box;
 	-webkit-line-clamp: 3; /* Limita a 3 líneas */
 	-webkit-box-orient: vertical;
+	margin-bottom: 0;
   }

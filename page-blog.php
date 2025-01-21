@@ -87,7 +87,7 @@ get_header();
                   <div class="swiper-wrapper">
                         <!-- Video 1 -->
                         <div class="swiper-slide">
-                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4">
+                              <video playsinline autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4">
                                  <source src="http://w2.local/wp-content/uploads/2024/12/vincent_van_gogh.mp4" type="video/mp4">
                                  Tu navegador no soporta la reproducción de video.
                               </video>

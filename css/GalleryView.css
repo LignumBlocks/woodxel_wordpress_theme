@@ -1,6 +1,44 @@
-#orderby {
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select-wrapper select {
+    width: 100%;
+    background-color: var(--tertiary);
+    padding: 10px 20px;
+    padding-right: 40px; /* Space for the arrow */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 	color: var(--secondary);
-	border-radius: 8px;
+	font-family: Roboto-Regular;
+	font-size: 16px;
+}
+
+.custom-select-wrapper .custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* Distance from the right edge */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px; /* Adjust the size of the arrow */
+    border-color: var(--secondary) transparent transparent transparent; /* Arrow color */
+    pointer-events: none;
+}
+
+#orderby.custom-class option {
+    font-size: 14px; /* Tamaño del texto de los options */
+}
+
+#orderby.custom-class option:hover {
+    background-color: #f0f0f0; /* Custom hover background color */
+    color: #000000; /* Custom hover text color */
 }
 
 
@@ -210,7 +248,7 @@ article[data-v-0b4006ed] {
 	padding: 5%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .item-text-left {
@@ -273,7 +311,8 @@ span[data-v-0b4006ed] {
 
 @media (min-width: 1024px) {
 	main[data-v-0b4006ed] {
-		gap: 30px
+		gap: 30px;
+		padding: 250px 0 150px;
 	}
 
 	.change-grid p[data-v-0b4006ed] {

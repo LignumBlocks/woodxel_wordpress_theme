@@ -48,13 +48,12 @@ do_action( 'woocommerce_before_cart' ); ?>
 								printf( '<a href="%s">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
 							}
 						?>
-                        <div class="item-text" data-v-00bac199="">
-                           <a aria-current="page" href="/shopping" class="router-link-active router-link-exact-active link" data-v-00bac199="">
+                        <div class="item-text" data-v-00bac199="">                           
 						   		<?php										
 										if ( ! $product_permalink ) {
 											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', $product_name, $cart_item, $cart_item_key ) . '&nbsp;' );
 										} else {
-											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a class="link" href="%s">%s</a>', esc_url( $product_permalink ), $product_name ), $cart_item, $cart_item_key ) );
+											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_name', sprintf( '<a class="link np" href="%s">%s</a>', esc_url( $product_permalink ), $product_name ), $cart_item, $cart_item_key ) );
 										}
 
 										do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
@@ -67,8 +66,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 											echo wp_kses_post( apply_filters( 'woocommerce_cart_item_backorder_notification', '<p class="backorder_notification">' . esc_html__( 'Available on backorder', 'woocommerce' ) . '</p>', $product_id ) );
 										}
 								?>
-							</a>
-                           <div data-v-00bac199=""><?php echo get_post_meta( $product_id, 'dimensions', true ); ?></div>
+							
+							<div data-v-00bac199="">
+								<?php 
+								$dimensions = isset($cart_item['dimensions']) ? $cart_item['dimensions'] : get_post_meta($product_id, 'dimensions', true);								
+								echo esc_html($dimensions);								
+								?>
+							</div>
                            <div class="cantidad hide" data-v-00bac199="">
 						   <?php
 								if ( $_product->is_sold_individually() ) {
@@ -176,7 +180,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<?php woocommerce_cross_sell_display(); ?>
         </div><!--grid1-->
 
-			<div class="grid2"> 
+			<div class="grid2" data-v-00bac199=""> 
 				<?php woocommerce_cart_totals(); ?>
 			</div>
     </div>
@@ -190,7 +194,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                   <div class="swiper-wrapper">
                         <!-- Video 1 -->
                         <div class="swiper-slide">
-                              <video autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/the_son_of-_man.mp4">
+                              <video playsinline autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/the_son_of-_man.mp4">
                                  <source src="http://w2.local/wp-content/uploads/2024/12/the_son_of-_man.mp4" type="video/mp4">
                                  Tu navegador no soporta la reproducción de video.
                               </video>
@@ -214,6 +218,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 		<script> 
 			jQuery(function($){
+				
 				// Detecta el cambio en el campo de cantidad
 				$('input.qty').on('change', function() {
 					// Al cambiar la cantidad, habilita el botón de actualizar

@@ -50,4 +50,3 @@ $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_a
 
 	<?php do_action( 'woocommerce_order_details_after_customer_details', $order );
 
-//Omit closing PHP tag to avoid accidental whitespace output errors.

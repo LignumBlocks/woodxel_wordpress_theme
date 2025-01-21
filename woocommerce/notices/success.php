@@ -33,4 +33,3 @@ if ( version_compare( WC_VERSION, '3.9', '<' ) ) {
 <?php
 }
 
-//Omit closing PHP tag to avoid accidental whitespace output errors.

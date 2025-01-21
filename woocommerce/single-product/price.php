@@ -23,8 +23,8 @@ global $product;
 
 ?>
 <div data-v-4935e4b1="" class="text22"><h2><?php echo $product->get_price_html(); ?></h2><div style="color: #FD3032;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     word-wrap: break-word;
-    line-height: 34px">+ Free Shipping Across US</div></div>
+    line-height: 34px">+ US Free Shipping</div></div>
 

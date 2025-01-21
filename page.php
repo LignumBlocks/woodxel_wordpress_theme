@@ -24,7 +24,3 @@
 		</div>
 
 	<?php get_footer(); ?>
-
-
-//Omit closing PHP tag to avoid accidental whitespace output errors.
-	

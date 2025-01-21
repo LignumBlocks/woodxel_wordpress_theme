@@ -13,7 +13,6 @@ get_header();
    <header data-v-9bc466b2="" class="page">
         <div data-v-9bc466b2="">
             <h1 data-v-9bc466b2="">TERMS OF USE</h1>
-            <p data-v-9bc466b2="">A set of regulations and guidelines that users must follow in order to use the site properly.</p>
         </div>
     </header>   
    <main data-v-29e1008a="">

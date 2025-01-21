@@ -1,3 +1,7 @@
+.about-page div[data-v-3ccdeeb0] h2 {
+	margin-bottom: 32px;
+}
+
 main.about-page .left::before {
 	background: url('about.png') no-repeat bottom center;
 }
@@ -345,6 +349,9 @@ svg[data-v-9b166b66] {
 
 
 @media (min-width: 1000px) {
+	main.about-page div.about-image {
+		border-radius: 8px;
+	}
 	.about-page .text[data-v-5cdffde3], .about-page .text[data-v-45606754]{
 		padding: 0 5% 0 12%;
 	}
@@ -430,7 +437,8 @@ svg[data-v-9b166b66] {
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-        height: auto
+        height: auto;
+		border-radius: 8px;
 	}
 
 	a[data-v-8e3445a3] {
@@ -475,6 +483,7 @@ svg[data-v-9b166b66] {
 
 	.where[data-v-45606754] {
 		width: 50%;
+		border-radius: 8px;
 	}
 
 	.text-none[data-v-45606754] {

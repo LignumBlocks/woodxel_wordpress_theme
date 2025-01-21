@@ -130,19 +130,10 @@ p[data-v-00bac199] {
 	font-size: 14px
 }
 
-/* .cantidad[data-v-00bac199] {
-	padding: 10px 15px;
-	border: 2px solid var(--tertiary);
-	border-radius: 5px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 5px;
-	font-family: Montserrat;
-	font-weight: 700;
-	color: var(--tertiary);
-	width: 90px
-} */
+td[data-title="Shipping"] {
+	padding: 0;
+}
+
 
 button[data-v-00bac199] {
 	background: none;
@@ -341,7 +332,7 @@ input[data-v-00bac199]:focus {
 @media (min-width:1000px) {
     .item-text[data-v-00bac199]{
         gap: 10px;
-        justify-content: flex-start;
+        justify-content: center;
     }
 	main[data-v-00bac199] {
 		padding: 192px 5%

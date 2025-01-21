@@ -121,7 +121,7 @@ span[data-v-b0169160] {
 }
 
 .left[data-v-9df49687] {
-	padding: 80px 5% 0;
+	padding: 96px 5% 0;
 }
 
 .image[data-v-9df49687] {
@@ -181,7 +181,7 @@ p[data-v-9df49687] {
 		display: flex;
 		flex-direction: row;
 		position: relative;
-		padding: 130px 12%
+		padding: 180px 12%
 	}
 
 	.left[data-v-9df49687] {
@@ -194,7 +194,6 @@ p[data-v-9df49687] {
 
 	.image[data-v-9df49687] {
 		height: 450px;
-		border-radius: unset
 	}
 
 	.right[data-v-9df49687] {

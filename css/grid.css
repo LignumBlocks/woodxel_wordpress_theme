@@ -263,11 +263,16 @@
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1000px) {
+	.eut-container {
+		padding: 250px 12% 0;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
 
 	.eut-container {
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 96px 5% 0;
 	}
 
 	/* Tablet Columns */

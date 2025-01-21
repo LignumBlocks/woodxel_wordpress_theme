@@ -12,7 +12,6 @@ get_header();
     <header data-v-9bc466b2="" class="page">
         <div data-v-9bc466b2="">
             <h1 data-v-9bc466b2="">CONTACT US</h1>
-            <p data-v-9bc466b2="">Its purpose is to provide users with an easy and direct way to ask questions, request more information, or report problems related to products or services.</p>
         </div>
     </header>
 
@@ -40,7 +39,7 @@ get_header();
                   <div class="swiper-wrapper">
                         <!-- Video 1 -->
                         <div class="swiper-slide">
-                              <video style="object-position: center bottom;" autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/marilyn_m.mp4">
+                              <video style="object-position: center bottom;" playsinline autoplay muted loop class="carousel-video" data-video="http://w2.local/wp-content/uploads/2024/12/marilyn_m.mp4">
                                  <source src="http://w2.local/wp-content/uploads/2024/12/marilyn_m.mp4" type="video/mp4">
                                  Tu navegador no soporta la reproducción de video.
                               </video>

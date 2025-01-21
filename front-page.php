@@ -53,19 +53,7 @@ get_header(); // Incluye el header.php
                      echo '<p>No products found in the "front" category.</p>';
                }
                ?>
-            </div>
-            <button class="swiper-button-prev" data-v-13f77b72="">
-               <svg width="48" height="76" viewBox="0 0 48 76" fill="none" stroke="#2C2C2C" xmlns="http://www.w3.org/2000/svg" class="icon1" data-v-13f77b72="">
-                  <path d="M10 10L38 38L10 66" stroke-width="8.38754"></path>
-               </svg>
-            </button>
-            <button class="swiper-button-next" data-v-13f77b72="">
-               <svg width="48" height="76" viewBox="0 0 48 76" fill="none" stroke="#2C2C2C" xmlns="http://www.w3.org/2000/svg" class="icon2" data-v-13f77b72="">
-                  <path d="M10 10L38 38L10 66" stroke-width="8.38754"></path>
-               </svg>
-            </button>
-
-            <style>.swiper-button-prev:after, .swiper-button-next:after{content: ''}</style>
+            </div>           
          </div>
 
          
@@ -128,60 +116,19 @@ get_header(); // Incluye el header.php
                         <div class="swiper-slide">
                            <img class="carousel-image-shot" src="http://w2.local/wp-content/uploads/2024/12/interview1.png" alt="Descripción de la imagen 1">
                            <div class="play-icon interview" data-video-url="http://w2.local/wp-content/uploads/2024/12/customer_chapling.mp4">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="109" height="113" viewBox="0 0 109 113" fill="none">
-                                 <g filter="url(#filter0_d_3424_12817)">
-                                       <path d="M54.914 0C27.63 0 5.53125 23.0462 5.53125 51.5C5.53125 79.9538 27.63 103 54.914 103C82.1979 103 104.297 79.9538 104.297 51.5C104.297 23.0462 82.1979 0 54.914 0ZM45.0374 74.675V28.325L74.6671 51.5L45.0374 74.675Z" fill="#E8E2CF"/>
-                                 </g>
-                                 <defs>
-                                       <filter id="filter0_d_3424_12817" x="0.963231" y="0" width="107.902" height="112.136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                          <feOffset dy="4.56802"/>
-                                          <feGaussianBlur stdDeviation="2.28401"/>
-                                          <feComposite in2="hardAlpha" operator="out"/>
-                                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3424_12817"/>
-                                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3424_12817" result="shape"/>
-                                       </filter>
-                                 </defs>
-                              </svg>
+                           <svg fill="#FFFFFF" height="80px" width="80px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                              viewBox="0 0 512 512" xml:space="preserve">
+                           <g>
+                              <g>
+                                 <path d="M500.203,236.907L30.869,2.24c-6.613-3.285-14.443-2.944-20.736,0.939C3.84,7.083,0,13.931,0,21.333v469.333
+                                    c0,7.403,3.84,14.251,10.133,18.155c3.413,2.112,7.296,3.179,11.2,3.179c3.264,0,6.528-0.747,9.536-2.24l469.333-234.667
+                                    C507.435,271.467,512,264.085,512,256S507.435,240.533,500.203,236.907z"/>
+                              </g>
+                           </g>
+                           </svg>
                            </div>
                         </div>
-                        <!-- Agrega más videos aquí -->
-                        <div class="swiper-slide">
-                           <img class="carousel-image-shot" src="http://w2.local/wp-content/uploads/2024/12/interview2.png" alt="Descripción de la imagen 1">
-                           <div class="play-icon interview" data-video-url="http://w2.local.com/wp-content/uploads/2024/12/interview_mouses.mp4">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="109" height="113" viewBox="0 0 109 113" fill="none">
-                                 <g filter="url(#filter0_d_3424_12817)">
-                                       <path d="M54.914 0C27.63 0 5.53125 23.0462 5.53125 51.5C5.53125 79.9538 27.63 103 54.914 103C82.1979 103 104.297 79.9538 104.297 51.5C104.297 23.0462 82.1979 0 54.914 0ZM45.0374 74.675V28.325L74.6671 51.5L45.0374 74.675Z" fill="#E8E2CF"/>
-                                 </g>
-                                 <defs>
-                                       <filter id="filter0_d_3424_12817" x="0.963231" y="0" width="107.902" height="112.136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                          <feOffset dy="4.56802"/>
-                                          <feGaussianBlur stdDeviation="2.28401"/>
-                                          <feComposite in2="hardAlpha" operator="out"/>
-                                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3424_12817"/>
-                                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3424_12817" result="shape"/>
-                                       </filter>
-                                 </defs>
-                              </svg>
-                           </div>
-                        </div>
-                  </div>
-                  <!-- Botones de navegación -->
-                  <div class="swiper-video-prev" >
-                     <svg width="48" height="76" viewBox="0 0 48 76" fill="none" stroke="#2C2C2C" xmlns="http://www.w3.org/2000/svg" class="icon1" data-v-13f77b72="">
-                        <path d="M10 10L38 38L10 66" stroke-width="8.38754"></path>
-                     </svg>
-                  </div>
-                  <div class="swiper-video-next" >
-                     <svg width="48" height="76" viewBox="0 0 48 76" fill="none" stroke="#2C2C2C" xmlns="http://www.w3.org/2000/svg" class="icon2" data-v-13f77b72="">
-                        <path d="M10 10L38 38L10 66" stroke-width="8.38754"></path>
-                     </svg>
-                  </div>
+                  </div>                  
                </div>
             </div>
             <div class="client fade-up text" client-opp-comp="">
@@ -240,8 +187,8 @@ get_header(); // Incluye el header.php
                <?php else : ?>
                   <div class="item2 item" data-v-1fa46bc7="" style="background-image: url('<?php echo esc_url($thumbnail); ?>');">
                      <div class="item-content item-content2" data-v-1fa46bc7="">
-                        <h2 >Luxury Homes: The beauty of pixeleted art decor</h2>
-                        <p >Luxury pixelated art decor represents the perfect fusion of luxury and innovation, a hallmark of exceptional home design. Introducing the latest…</p>
+                        <h2>Luxury Homes: The beauty of pixeleted art decor</h2>
+                        <p>Luxury pixelated art decor represents the perfect fusion of luxury and innovation, a hallmark of exceptional home design. Introducing the latest…</p>
                         <a href="<?php echo esc_url($permalink); ?>" class="button1" data-v-1fa46bc7="">Read the article</a>
                      </div>
                   </div>
@@ -257,9 +204,6 @@ get_header(); // Incluye el header.php
                </div>
             </section>
          </main>
-        
-
-              
 
 </main>
 
@@ -269,11 +213,11 @@ get_header(); // Incluye el header.php
       const swiper_gallery = new Swiper('.swiper-home-container', {
         speed: 400,
         slidesPerView: 1,
-        spaceBetween : 5,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        spaceBetween : 10,       
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+         },
         breakpoints: {
             768: {
                 slidesPerView: 2,
@@ -290,12 +234,8 @@ get_header(); // Incluye el header.php
         },
     });
 
-      const swiper = new Swiper('.swiper-video-container', {
-        slidesPerView: 1,
-        navigation: {
-            nextEl: '.swiper-video-next',
-            prevEl: '.swiper-video-prev',
-        },     
+   const swiper = new Swiper('.swiper-video-container', {
+      slidesPerView: 1,
     });
 
 

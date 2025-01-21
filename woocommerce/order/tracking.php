@@ -44,4 +44,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php do_action( 'woocommerce_view_order', $order->get_id() );
 	
-//Omit closing PHP tag to avoid accidental whitespace output errors.
+

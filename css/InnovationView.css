@@ -1,3 +1,11 @@
+.images-container .img {
+    display: none !important; /* Oculta todas las imágenes por defecto */
+}
+
+.images-container .img.active {
+    display: block !important; /* Solo muestra la imagen activa */
+}
+
 .section-3 .text.fade-up {
 	padding: 0 0 48px;
 }
@@ -124,12 +132,12 @@ header[data-v-de9217ad] {
 
 	main.image-order .img {
 		border-radius: 8px;
-		width: 80%;
 	}
 
 	main.image-order .images {
+		height: 353px;
 		width: 50%;
-		padding: 0 0 0 5%;
+		padding: 0 12% 0 5%;
 	}
 
 	main.image-order .text[data-v-56ed5e91]{
@@ -139,6 +147,7 @@ header[data-v-de9217ad] {
 	.innovation-container main.image-order {
 		flex-direction: row;
 		height: 410px;
+		align-items: center;
 	}
 
 	.customization-tool h2 {
@@ -229,12 +238,14 @@ h2[data-v-7d6f6b18] {
 .background-container.one{
     background-image: url('starry_night.jpg');
 	height: 280px;
+	border-radius: 8px;
 
 }
 
 .background-container.two{
     background-image: url('http://w2.local/wp-content/uploads/2024/12/i5.png');
 	height: 367px;
+	border-radius: 8px;
 }
 
 .background-container {
@@ -266,7 +277,7 @@ h2[data-v-7d6f6b18] {
 	}
 
 	main[data-v-7d6f6b18] {
-		padding: 130px 12%;
+		padding: 150px 12%;
 		flex-direction: row;
 	}
 

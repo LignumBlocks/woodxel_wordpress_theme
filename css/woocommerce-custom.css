@@ -28,13 +28,30 @@
 
 #order_review_heading {
 	text-align: center;
+	
 }
+
 
 
 
 /* =============================================================================
 1. Message
 ============================================================================= */
+
+.woocommerce .woocommerce-info {
+	box-shadow: none !important;
+	background-color: unset !important; 
+	color: var(--tertiary) !important;
+}
+
+.woocommerce-info a {
+	color: var(--tertiary) !important;
+}
+
+.woocommerce .woocommerce-info a:hover {
+	color: var(--tertiary);
+}
+
 .eut-woo-error,
 .eut-woo-info,
 .eut-woo-message,
@@ -45,7 +62,7 @@
 	line-height: 24px;
 	max-width: 1170px;
 	list-style: none;
-	margin: 0 auto 2.500em auto !important;
+	margin: 0 auto 2.500em auto;
 	border: none;
 	border-radius: 8px;
     box-shadow: 0px 4.194px 4.194px 0px rgba(0, 0, 0, 0.25);
@@ -143,6 +160,12 @@
 .woocommerce .woocommerce-message {
 	background-color: #cccccc;
 	color: var(--tertiary);
+}
+
+@media only screen and (max-width: 1000px) {
+	.single-product.woocommerce .woocommerce-message {
+		margin: 73px 0 0;
+	}
 }
 
 /* =============================================================================
@@ -689,7 +712,7 @@ a.eut-reset-var i {
 
 .eut-border-wrapper {
 	border: 2px solid;
-	padding: 34px 25px;
+	padding: 25px;
 	border-color:#E6E6E6;
 }
 
@@ -1570,22 +1593,26 @@ body.woocommerce-checkout .eut-container {
 
 @media only screen and (min-width: 1000px) {
 
-.woocommerce-form-login .submit-area.form-row {
-	float: left;
-	gap: 15px;
-}
+	body.woocommerce-checkout .eut-container {
+		padding: 250px 12% 150px;
+	}
 
-.woocommerce-form-login .lost_password{
-	float: right;
-}
+	.woocommerce-form-login .submit-area.form-row {
+		float: left;
+		gap: 15px;
+	}
 
-.woocommerce-form-login .woocommerce-LostPassword.lost_password {
-	margin-top: 32px;
-}
+	.woocommerce-form-login .lost_password{
+		float: right;
+	}
 
-.form-row.login-buttons {
-	float: left;
-}
+	.woocommerce-form-login .woocommerce-LostPassword.lost_password {
+		margin-top: 32px;
+	}
+
+	.form-row.login-buttons {
+		float: left;
+	}
 }
 
 #ship-to-different-address label, #ship-to-different-address input {
